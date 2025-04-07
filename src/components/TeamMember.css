@@ -1,0 +1,74 @@
+/* Team Section */
+.team-section {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+  }
+  
+  .team-members {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .team-member-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    position: relative;
+  }
+  
+  .member-image {
+    flex: 1;
+    min-width: 250px;
+    max-width: 40%;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .member-info {
+    flex: 1.5;
+    padding: 40px;
+  }
+  
+  .member-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #6374c3;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .member-bio {
+    margin-top: 50px;
+    line-height: 1.8;
+    color: #444;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .team-member-card {
+      flex-direction: column;
+    }
+    
+    .member-name {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .member-image {
+      height: 300px;
+      max-width: 100%;
+    }
+    
+    .member-info {
+      padding: 20px;
+    }
+  }
