@@ -1,0 +1,133 @@
+/* src/components/CoreFeatures.css - updated with description styles */
+.core-features-section {
+  padding: 60px 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.core-features-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,173,156,0.3) 0%, rgba(255,173,156,0) 50%);
+  z-index: 0;
+}
+
+.core-features-section .container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.module-badge {
+  margin-bottom: 30px;
+}
+
+.module-badge span {
+  display: inline-block;
+  background-color: #222;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.main-feature-image {
+  margin-bottom: 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.main-feature-image img {
+  width: 65%;
+  display: block;
+}
+
+.feature-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-image {
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+}
+
+.feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.feature-title {
+  background-color: #ff7b5a;
+  color: white;
+  padding: 12px 15px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.feature-description {
+  padding: 15px;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+  flex-grow: 1;
+  background-color: #f9f9f9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .feature-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .module-badge span {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .feature-image {
+    height: 160px;
+  }
+}

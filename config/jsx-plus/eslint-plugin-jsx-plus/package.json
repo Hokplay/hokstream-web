@@ -1,0 +1,14 @@
+{
+  "name": "eslint-plugin-jsx-plus",
+  "version": "0.1.0",
+  "description": "eslint plugin for jsx plus",
+  "author": "jsx-plus",
+  "homepage": "https://github.com/jsx-plus/eslint-plugin-jsx-plus",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "node src/rules/valid-x-for.test.js"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
