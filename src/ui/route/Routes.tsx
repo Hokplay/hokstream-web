@@ -7,7 +7,7 @@ import {
 import { RoutePath } from '@/ui/route/RoutePath.ts';
 import MainLayout from '@/shared/ui/layout/MainLayout.tsx';
 import HomeView from '@/ui/home/view/Home.view.tsx';
-import IntroView from '@/ui/intro/view/Intro.view.tsx';
+import IntroductionView from '@/ui/introduction/view/Introduction.view.tsx';
 import SuccessCaseView from '@/ui/successCase/view/SuccessCase.view.tsx';
 import FeatureView from '@/ui/feature/view/Feature.view.tsx';
 import AboutUsView from '@/ui/contactUs/view/AboutUs.view.tsx';
@@ -23,7 +23,7 @@ function Routes() {
         },
         {
           path: RoutePath.Intro,
-          element: <IntroView />
+          element: <IntroductionView />
         },
         {
           path: RoutePath.Cases,
