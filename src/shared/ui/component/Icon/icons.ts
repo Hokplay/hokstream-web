@@ -1,1 +1,1 @@
-export { default as Google } from '../../asset/icon/google.svg';
+export { default as LeftArrow } from '@/shared/ui/asset/icon/left-arrow.svg';

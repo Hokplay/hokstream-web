@@ -3,5 +3,6 @@ export enum RoutePath {
   Intro = '/intro',
   Cases = '/cases',
   Features = '/features',
-  About = '/about'
+  About = '/about',
+  PrivacyPolicy = '/privacy-policy'
 }

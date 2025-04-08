@@ -11,6 +11,7 @@ import IntroView from '@/ui/intro/view/Intro.view.tsx';
 import SuccessCaseView from '@/ui/successCase/view/SuccessCase.view.tsx';
 import FeatureView from '@/ui/feature/view/Feature.view.tsx';
 import AboutUsView from '@/ui/contactUs/view/AboutUs.view.tsx';
+import PrivacyPolicyView from '@/ui/privacyPolicy/view/PrivacyPolicy.view.tsx';
 
 function Routes() {
   const router = createBrowserRouter([
@@ -36,6 +37,10 @@ function Routes() {
         {
           path: RoutePath.About,
           element: <AboutUsView />
+        },
+        {
+          path: RoutePath.PrivacyPolicy,
+          element: <PrivacyPolicyView />
         },
         {
           path: '*',
