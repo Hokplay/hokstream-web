@@ -1,11 +1,12 @@
 import { RoutePath } from '@/ui/route/RoutePath.ts';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
 
 import './Menu.scss';
 
 function Menu() {
   const { t } = useTranslation();
+  const location = useLocation();
 
   const menuList = [
     {
@@ -29,7 +30,16 @@ function Menu() {
   return (
     <nav uno-flex="~ gap-25px">
       {menuList.map(menu => (
-        <Link key={menu.to} to={menu.to} x-class="menu-item">
+        <Link
+          key={menu.to}
+          to={menu.to}
+          x-class={[
+            'menu-item',
+            {
+              highlight: location.pathname === menu.to
+            }
+          ]}
+        >
           {menu.label}
         </Link>
       ))}
