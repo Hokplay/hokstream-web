@@ -28,7 +28,7 @@ function Menu() {
   ];
 
   return (
-    <nav uno-flex="~ gap-25px">
+    <nav uno-flex="~">
       {menuList.map(menu => (
         <Link
           key={menu.to}
