@@ -63,7 +63,6 @@ function HomeView() {
             {t.sportsmeshTitle}
           </h1>
           <Tags />
-          {/*<button x-class="contact-btn mt-30px">{t.contactBtn}</button>*/}
           <ContactUsButton />
         </div>
       </section>

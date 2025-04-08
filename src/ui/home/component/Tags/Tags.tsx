@@ -39,7 +39,7 @@ function Tags() {
   const t = translations[locale];
 
   return (
-    <div uno-flex="~ gap-5px wrap">
+    <div uno-flex="~ gap-5px wrap" x-class="py-20px">
       {tagList.map(tagKey => (
         <span
           key={tagKey}

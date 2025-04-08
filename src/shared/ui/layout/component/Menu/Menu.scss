@@ -1,0 +1,8 @@
+.menu-item {
+  text-decoration: none;
+  color: var(--Secondary-Light);
+
+  &:hover {
+    color: var(--Primary);
+  }
+}
