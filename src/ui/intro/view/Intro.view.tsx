@@ -1,7 +1,13 @@
+import Banner from '@/ui/intro/Banner/Banner.tsx';
+
 import './Intro.scss';
 
 function IntroView() {
-  return <div className="intro-page">簡介頁面</div>;
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 }
 
 export default IntroView;
