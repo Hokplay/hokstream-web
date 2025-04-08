@@ -1,48 +1,86 @@
 {
-  "name": "sportsmesh-website",
-  "version": "0.1.0",
+  "name": "back-office-frontend",
   "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/material": "^7.0.1",
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-router-dom": "^7.4.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev:dev": "vite --mode dev",
+    "dev:staging": "vite --mode staging",
+    "dev:prod": "vite --mode prod",
+    "build:dev": "tsc -b && vite build --mode dev && rm -rf dist/assets/*.js.map",
+    "build:staging": "tsc -b && vite build --mode staging && rm -rf dist/assets/*.js.map",
+    "build:prod": "tsc -b && vite build --mode prod && rm -rf dist/assets/*.js.map",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test:unit": "vitest",
+    "test:e2e": "playwright test",
+    "typecheck": "tsc -b",
+    "dev:generate-i18n-files": "node script/generateI18nFilesFromGoogleSheet.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "antd": "^5.24.6",
+    "axios": "^1.7.9",
+    "clsx": "^2.1.1",
+    "core-js": "^3.39.0",
+    "i18next": "^24.2.1",
+    "i18next-browser-languagedetector": "^8.0.2",
+    "i18next-http-backend": "^3.0.1",
+    "js-cookie": "^3.0.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.4.0",
+    "react-router-dom": "^7.1.5",
+    "react-use": "^17.6.0",
+    "throttle-debounce": "^5.0.2",
+    "valtio": "^1.13.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.0"
+    "@playwright/test": "^1.49.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/js-cookie": "^3.0.6",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "@vitejs/plugin-legacy": "^6.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "dotenv": "^16.4.7",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest-extended": "^2.0.0",
+    "eslint-plugin-jsx-plus": "file:config/jsx-plus/eslint-plugin-jsx-plus",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-testing-library": "^6.2.0",
+    "eslint-plugin-valtio": "^0.6.1",
+    "globals": "^15.14.0",
+    "googleapis": "^144.0.0",
+    "jest-extended": "^4.0.2",
+    "js-yaml": "^4.1.0",
+    "jsdom": "^25.0.1",
+    "nock": "^14.0.1",
+    "playwright-core": "^1.51.0",
+    "prettier": "^2.7.1",
+    "rollup-plugin-react-scoped-css": "^1.1.0",
+    "sass": "^1.54.5",
+    "typescript": "^5.7.2",
+    "unocss": "^0.65.3",
+    "vite": "^6.0.11",
+    "vite-plugin-checker": "^0.8.0",
+    "vite-plugin-inspect": "^0.10.6",
+    "vite-plugin-svgr": "^4.3.0",
+    "vitest": "^3.0.3",
+    "vitest-mock-extended": "^3.0.1"
+  },
+  "volta": {
+    "node": "22.12.0",
+    "npm": "10.9.0"
   }
 }
