@@ -4,8 +4,6 @@ import ContactUsButton from '@/shared/ui/component/ContactUsButton/ContactUsButt
 import Menu from '@/shared/ui/layout/component/Menu/Menu.tsx';
 import HokStreamLogo from '@/shared/ui/layout/component/HokStreamLogo/HokStreamLogo.tsx';
 
-import './Header.scss';
-
 function Header() {
   return (
     <header x-class="py-16px">
