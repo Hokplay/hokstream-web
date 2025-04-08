@@ -1,5 +1,7 @@
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
+import Tags from '@/ui/home/component/Tags/Tags.tsx';
 import Partners from '@/ui/home/component/Partners/Partners.tsx';
+import ContactUsButton from '@/shared/ui/component/ContactUsButton/ContactUsButton.tsx';
 
 import './Home.scss';
 
@@ -44,26 +46,25 @@ function HomeView() {
 
   return (
     <div className="intro-page">
-      <section className="hero-section">
-        <div className="hero-content">
-          <div className="hero-image">
-            <img
-              src="/images/Landing_Hero_Image.png"
-              alt="Streaming on phone"
-            />
-          </div>
-          <div className="hero-text">
-            <h1>{t.sportsmeshTitle}</h1>
-            <div className="tags">
-              <span className="tag">{t.realTimeVideo}</span>
-              <span className="tag">{t.aiAnalysis}</span>
-              <span className="tag">{t.game}</span>
-              <span className="tag">{t.socialMedia}</span>
-              <span className="tag">{t.dataAnalysis}</span>
-              <span className="tag">{t.fan}</span>
-            </div>
-            <button className="contact-btn">{t.contactBtn}</button>
-          </div>
+      <section
+        uno-flex="~ gap-20px items-center"
+        x-class="max-w-1200px mx-auto"
+        uno-p="y-60px"
+      >
+        <div x-class="aspect-628/644 overflow-hidden" uno-border="rounded-20px">
+          <img
+            x-class="w-100% h-100% object-cover object-right"
+            src="/images/Landing_Hero_Image.png"
+            alt="Streaming on phone"
+          />
+        </div>
+        <div>
+          <h1 x-class="my-0" uno-text="96px">
+            {t.sportsmeshTitle}
+          </h1>
+          <Tags />
+          {/*<button x-class="contact-btn mt-30px">{t.contactBtn}</button>*/}
+          <ContactUsButton />
         </div>
       </section>
 
