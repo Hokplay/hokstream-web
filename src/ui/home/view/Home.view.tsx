@@ -1,5 +1,5 @@
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
-import { imageList } from '@/ui/home/imageList.ts';
+import Partners from '@/ui/home/component/Partners/Partners.tsx';
 
 import './Home.scss';
 
@@ -110,15 +110,7 @@ function HomeView() {
       </section>
 
       <section className="partners">
-        <div className="partner-carousel-container">
-          <div className="partner-carousel">
-            <div className="partner-track">
-              {imageList.map(image => (
-                <img key="image.src" src={image.src} alt={image.alt} />
-              ))}
-            </div>
-          </div>
-        </div>
+        <Partners />
       </section>
     </div>
   );
