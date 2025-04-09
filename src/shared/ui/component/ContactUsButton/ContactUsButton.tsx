@@ -4,14 +4,17 @@ function ContactUsButton() {
   const { t } = useTranslation();
 
   return (
-    <button
-      x-class="min-h-32px bg-$Primary cursor-pointer"
+    <a
+      href="mailto:contact@sportsmesh.com"
+      target="_blank"
+      x-class="block max-w-max bg-$Primary cursor-pointer no-underline leading-28px"
       uno-text="#ffffff"
       uno-border="none rounded-20px"
       uno-p="x-20px y-4px"
+      rel="noreferrer"
     >
       {t('contact')}
-    </button>
+    </a>
   );
 }
 
