@@ -5,5 +5,5 @@ export enum RoutePath {
   Features = '/features',
   About = '/about',
   PrivacyPolicy = '/privacy-policy',
-  TermsOfService = '/terms-of-service'
+  TermsOfUse = '/terms-of-use'
 }
