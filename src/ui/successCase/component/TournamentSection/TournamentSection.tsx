@@ -30,7 +30,6 @@ function TournamentSection() {
     <div
       className="tournament-section"
       style={{
-        backgroundColor: '#fff',
         padding: '40px 0 60px',
         fontFamily: 'Arial, sans-serif'
       }}
@@ -123,17 +122,11 @@ function TournamentSection() {
           </p>
         </div>
 
-        <div
-          style={{
-            borderRadius: '8px',
-            overflow: 'hidden',
-            marginBottom: '30px'
-          }}
-        >
+        <div x-class="max-w-800px aspect-800/450 overflow-hidden mb-30px mx-auto">
           <img
+            x-class="w-full h-full object-cover"
             src="/images/CaseStudy_萬能科技大學現場.png"
             alt="League of Legends Tournament Setup"
-            style={{ width: '100%', display: 'block' }}
           />
         </div>
       </div>
