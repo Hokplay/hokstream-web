@@ -1,11 +1,6 @@
 /* src/components/FeatureCards.css */
 .feature-cards-section {
   padding: 60px 0;
-  background-color: #f5f5f5;
-  background-image: url('../../public/images/network-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .container {
@@ -66,7 +61,7 @@
 }
 
 .feature-title {
-  font-size: 16.0rem;
+  font-size: 20px;
   font-weight: 1200;
   margin-bottom: 15px;
   color: #333333;

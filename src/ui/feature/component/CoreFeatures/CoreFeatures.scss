@@ -46,18 +46,6 @@
   border-radius: 30px;
 }
 
-.main-feature-image {
-  margin-bottom: 40px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.main-feature-image img {
-  width: 65%;
-  display: block;
-}
-
 .feature-cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

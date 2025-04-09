@@ -49,8 +49,9 @@ const CoreFeatures = () => {
           <span>{t.remoteModule}</span>
         </div>
 
-        <div className="main-feature-image">
+        <div className="mb-40px max-w-720px mx-auto overflow-hidden">
           <img
+            x-class="w-full"
             src="/images/broadcasting_interface.png"
             alt="Broadcasting interface"
           />
@@ -60,7 +61,7 @@ const CoreFeatures = () => {
           <div className="feature-card">
             <div className="feature-image">
               <img
-                src="/images/faces-collage.jpg"
+                src="/images/features/線上字卡_開頭動畫.png"
                 alt="Online subtitles and animations"
               />
             </div>

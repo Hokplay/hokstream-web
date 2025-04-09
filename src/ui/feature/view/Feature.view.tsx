@@ -1,5 +1,4 @@
 // src/pages/Features.js - Fixed syntax error
-import { useState, useEffect } from 'react';
 import FeatureCards from '@/ui/feature/component/FeatureCards/FeatureCards.tsx';
 import CoreFeatures from '@/ui/feature/component/CoreFeatures/CoreFeatures.tsx';
 import VideoProcessing from '@/ui/feature/component/VideoProcessing/VideoProcessing.tsx';
@@ -142,13 +141,14 @@ const translations = {
 // Define real image paths - assuming images are stored in the public folder
 const images = {
   heroImage: '/images/faces-collage.jpg', // Image 1
-  broadcastSetup: '/images/broadcast-setup-2024.jpg', // Image 2
+  broadcastSetup: '/images/features/Multi-Location-Remote-Production.png', // Image 2
   audioControls: '/images/audio-controls.jpg', // Image 3
   channelSettings: '/images/channel-settings.jpg', // Image 4
   gameInterface: '/images/game-interface.jpg', // Image 5
   videoProcessing: '/images/video-processing-app.jpg', // Image 6
   iconLive: '/images/icon-live.png',
   gameCollage: '/images/category_less.png', // New game collage image
+  decentralizedDesign: '/images/features/Decentralized-Design.png',
   iconResource: '/images/icon-resource.png',
   iconAnalytics: '/images/Web3去中心化-icon.png',
   iconProtection: '/images/learning_curve-icon.png',
@@ -160,16 +160,6 @@ const images = {
 function FeatureView() {
   const { locale } = useTranslation();
   const t = translations[locale];
-  const [highlightIndex, setHighlightIndex] = useState(0);
-
-  // Cycle through highlights automatically
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setHighlightIndex(prev => (prev + 1) % 5);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="features-page">
@@ -315,31 +305,16 @@ function FeatureView() {
             </div>
           </div>
 
-          <div className="feature-item blue-feature">
-            <div className="feature-text centered-text">
+          <div className="feature-item">
+            <div className="feature-image game-collage-image">
+              <img
+                src={images.decentralizedDesign}
+                alt="Various game types supported"
+              />
+            </div>
+            <div className="feature-text">
               <h2>{t.decentralizedDesign}</h2>
               <p>{t.decentralizedDesignDesc}</p>
-              <div className="design-comparison">
-                <div className="design-item">
-                  <img src={images.heroImage} alt="Centralized design" />
-                  {highlightIndex === 4 && (
-                    <div
-                      className="highlight-overlay"
-                      style={{
-                        top: '10%',
-                        left: '10%',
-                        width: '80%',
-                        height: '80%'
-                      }}
-                    ></div>
-                  )}
-                  <span>{t.centralizedTitle}</span>
-                </div>
-                <div className="design-item">
-                  <img src={images.gameInterface} alt="Decentralized design" />
-                  <span>{t.decentralizedTitle}</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>

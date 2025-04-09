@@ -170,7 +170,7 @@ function SuccessCaseView() {
             </div>
             <div className="tracking-card outline">
               <img
-                src="/images/sucessCase/草根社群體育_插畫.png"
+                src="/images/successCase/草根社群體育_插畫.png"
                 alt="草根社群體育"
               />
             </div>
