@@ -1,7 +1,6 @@
-import { useState } from 'react';
-import { useTranslation } from '@/i18n/hook/useTranslation.ts';
+import type { SupportedLocale } from '@/i18n/SupportedLocale.ts';
 
-import './AboutUs.scss';
+import './ContactUs.scss';
 
 const translations = {
   'zh-TW': {
@@ -24,56 +23,23 @@ const translations = {
   }
 };
 
-function AboutUsView() {
-  const { locale } = useTranslation();
+interface ContactUsProps {
+  locale: SupportedLocale;
+}
+
+function ContactUs({ locale }: ContactUsProps) {
   const t = translations[locale];
-  const [contactForm, setContactForm] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    description: ''
-  });
-
-  const handleContactChange = e => {
-    const { name, value } = e.target;
-    setContactForm({
-      ...contactForm,
-      [name]: value
-    });
-  };
-
-  const handleContactSubmit = e => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', contactForm);
-    // Reset form after submission
-    setContactForm({
-      name: '',
-      email: '',
-      phone: '',
-      description: ''
-    });
-    // Show success message or other feedback
-  };
 
   return (
     <section className="contact-section" id="contact">
       <div className="section-container">
         <h2>{t.contactUs}</h2>
-        <form className="contact-form" onSubmit={handleContactSubmit}>
+        <form className="contact-form">
           <div className="form-group">
             <label htmlFor="name">
               {t.name} <span className="required">*</span>
             </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={contactForm.name}
-              onChange={handleContactChange}
-              required
-              placeholder="-"
-            />
+            <input type="text" id="name" name="name" required placeholder="-" />
           </div>
 
           <div className="form-group">
@@ -84,8 +50,6 @@ function AboutUsView() {
               type="email"
               id="email"
               name="email"
-              value={contactForm.email}
-              onChange={handleContactChange}
               required
               placeholder="-"
             />
@@ -99,8 +63,6 @@ function AboutUsView() {
               type="tel"
               id="phone"
               name="phone"
-              value={contactForm.phone}
-              onChange={handleContactChange}
               required
               placeholder="-"
             />
@@ -113,8 +75,6 @@ function AboutUsView() {
             <textarea
               id="description"
               name="description"
-              value={contactForm.description}
-              onChange={handleContactChange}
               required
               rows={5}
               placeholder="-"
@@ -122,9 +82,20 @@ function AboutUsView() {
           </div>
 
           <div className="form-action">
-            <button type="submit" className="submit-btn">
-              {t.send} ➤
-            </button>
+            {/*<button type="submit" className="submit-btn">*/}
+            {/*  {t.send} ➤*/}
+            {/*</button>*/}
+            <a
+              href="mailto:contact@sportsmesh.com"
+              target="_blank"
+              x-class="block ml-auto max-w-max bg-$Primary cursor-pointer no-underline leading-28px"
+              uno-text="#ffffff"
+              uno-border="rounded-20px"
+              uno-p="x-20px y-4px"
+              rel="noreferrer"
+            >
+              {t.send}
+            </a>
           </div>
         </form>
       </div>
@@ -132,4 +103,4 @@ function AboutUsView() {
   );
 }
 
-export default AboutUsView;
+export default ContactUs;
