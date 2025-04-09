@@ -141,14 +141,14 @@ const translations = {
 // Define real image paths - assuming images are stored in the public folder
 const images = {
   heroImage: '/images/faces-collage.jpg', // Image 1
-  broadcastSetup: '/images/successCase/Multi-Location-Remote-Production.png', // Image 2
+  broadcastSetup: '/images/features/Multi-Location-Remote-Production.png', // Image 2
   audioControls: '/images/audio-controls.jpg', // Image 3
   channelSettings: '/images/channel-settings.jpg', // Image 4
   gameInterface: '/images/game-interface.jpg', // Image 5
   videoProcessing: '/images/video-processing-app.jpg', // Image 6
   iconLive: '/images/icon-live.png',
   gameCollage: '/images/category_less.png', // New game collage image
-  decentralizedDesign: '/images/successCase/Decentralized-Design.png',
+  decentralizedDesign: '/images/features/Decentralized-Design.png',
   iconResource: '/images/icon-resource.png',
   iconAnalytics: '/images/Web3去中心化-icon.png',
   iconProtection: '/images/learning_curve-icon.png',

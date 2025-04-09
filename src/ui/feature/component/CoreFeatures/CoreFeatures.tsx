@@ -61,7 +61,7 @@ const CoreFeatures = () => {
           <div className="feature-card">
             <div className="feature-image">
               <img
-                src="/images/faces-collage.jpg"
+                src="/images/features/線上字卡_開頭動畫.png"
                 alt="Online subtitles and animations"
               />
             </div>
