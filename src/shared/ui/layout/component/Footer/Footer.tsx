@@ -1,7 +1,8 @@
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
+import { Link } from 'react-router-dom';
+import { RoutePath } from '@/ui/route/RoutePath.ts';
 
 import './Footer.scss';
-// Footer logo will be replaced later
 
 const translations = {
   'zh-TW': {
@@ -80,7 +81,7 @@ function Footer() {
           <h4>{t.support}</h4>
           <ul>
             <li>
-              <a href="#privacy">{t.privacyPolicy}</a>
+              <Link to={RoutePath.PrivacyPolicy}>{t.privacyPolicy}</Link>
             </li>
             <li>
               <a href="#terms">{t.termsOfService}</a>
