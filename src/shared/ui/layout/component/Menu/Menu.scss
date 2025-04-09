@@ -1,9 +1,11 @@
 .menu-item {
+  padding: 4px 16px;
   text-decoration: none;
   color: var(--Secondary-Light);
+  transition-duration: 0.8s;
 
   &:hover {
-    color: var(--Primary);
+    color: var(--Primary-Light);
   }
 }
 
