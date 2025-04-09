@@ -82,9 +82,20 @@ function ContactUs({ locale }: ContactUsProps) {
           </div>
 
           <div className="form-action">
-            <button type="submit" className="submit-btn">
-              {t.send} ➤
-            </button>
+            {/*<button type="submit" className="submit-btn">*/}
+            {/*  {t.send} ➤*/}
+            {/*</button>*/}
+            <a
+              href="mailto:contact@sportsmesh.com"
+              target="_blank"
+              x-class="block ml-auto max-w-max bg-$Primary cursor-pointer no-underline leading-28px"
+              uno-text="#ffffff"
+              uno-border="rounded-20px"
+              uno-p="x-20px y-4px"
+              rel="noreferrer"
+            >
+              {t.send}
+            </a>
           </div>
         </form>
       </div>
