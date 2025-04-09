@@ -6,7 +6,7 @@ import HokStreamLogo from '@/shared/ui/layout/component/HokStreamLogo/HokStreamL
 
 function Header() {
   return (
-    <header x-class="fixed t-0 w-full h-80px py-16px bg-#ffffff">
+    <header x-class="fixed top-0 w-full h-80px py-16px bg-#ffffff">
       <div uno-flex="~ justify-between" x-class="max-w-1200px mx-auto">
         <div className="logo">
           <Link to="/" x-class="block w-110px">

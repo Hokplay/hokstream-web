@@ -8,7 +8,7 @@ function MainLayout() {
     <div>
       <ScrollToTop />
       <Header />
-      <main x-class="bg-#F2F2F2">
+      <main x-class="bg-#F2F2F2 pt-80px">
         <Outlet />
       </main>
       <Footer />
