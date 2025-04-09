@@ -15,7 +15,7 @@ const translations = {
     intro: '簡介',
     successCases: '成功案例',
     features: '功能',
-    contactUs: '聯絡我們',
+    aboutUs: '聯絡我們',
     support: '支援',
     privacyPolicy: '隱私權政策',
     termsOfService: '使用者條款',
@@ -30,9 +30,9 @@ const translations = {
       '16F., No. 70-1, Sec. 1, Chengde Rd., Datong District, Taipei City',
     menu: 'Menu',
     intro: 'Introduction',
-    successCases: 'Success Cases',
+    successCases: 'Case Study',
     features: 'Features',
-    contactUs: 'Contact Us',
+    aboutUs: 'About Us',
     support: 'Support',
     privacyPolicy: 'Privacy Policy',
     termsOfService: 'Terms of Service',
@@ -51,7 +51,15 @@ function Footer() {
           <h4>{t.sportsmesh}</h4>
           <div className="contact-info">
             <div>
-              <strong>{t.email}:</strong> contact@sportsmesh.com
+              <strong>{t.email}: </strong>
+              <a
+                href="mailto:contact@sportsmesh.com"
+                target="_blank"
+                uno-text="#ffffff"
+                rel="noreferrer"
+              >
+                contact@sportsmesh.com
+              </a>
             </div>
             <div>
               <strong>{t.address}:</strong> {t.addressText}
@@ -63,16 +71,16 @@ function Footer() {
           <h4>{t.menu}</h4>
           <ul>
             <li>
-              <a href="#intro">{t.intro}</a>
+              <Link to={RoutePath.Intro}>{t.intro}</Link>
             </li>
             <li>
-              <a href="#success-cases">{t.successCases}</a>
+              <Link to={RoutePath.Cases}>{t.successCases}</Link>
             </li>
             <li>
-              <a href="#features">{t.features}</a>
+              <Link to={RoutePath.Features}>{t.features}</Link>
             </li>
             <li>
-              <a href="#contact">{t.contactUs}</a>
+              <Link to={RoutePath.About}>{t.aboutUs}</Link>
             </li>
           </ul>
         </div>
@@ -84,7 +92,7 @@ function Footer() {
               <Link to={RoutePath.PrivacyPolicy}>{t.privacyPolicy}</Link>
             </li>
             <li>
-              <a href="#terms">{t.termsOfService}</a>
+              <Link to={RoutePath.TermsOfService}>{t.termsOfService}</Link>
             </li>
           </ul>
         </div>
