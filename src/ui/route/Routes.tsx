@@ -12,6 +12,7 @@ import SuccessCaseView from '@/ui/successCase/view/SuccessCase.view.tsx';
 import FeatureView from '@/ui/feature/view/Feature.view.tsx';
 import AboutUsView from '@/ui/aboutUs/view/AboutUs.view.tsx';
 import PrivacyPolicyView from '@/ui/privacyPolicy/view/PrivacyPolicy.view.tsx';
+import TermsOfUseView from '@/ui/termsOfUse/view/TermsOfUse.view.tsx';
 
 function Routes() {
   const router = createBrowserRouter([
@@ -41,6 +42,10 @@ function Routes() {
         {
           path: RoutePath.PrivacyPolicy,
           element: <PrivacyPolicyView />
+        },
+        {
+          path: RoutePath.TermsOfUse,
+          element: <TermsOfUseView />
         },
         {
           path: '*',
