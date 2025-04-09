@@ -1,6 +1,7 @@
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
 import { Link } from 'react-router-dom';
 import { RoutePath } from '@/ui/route/RoutePath.ts';
+import { contactConfig } from '@/config/contactConfig.ts';
 
 import './Footer.scss';
 
@@ -53,12 +54,12 @@ function Footer() {
             <div>
               <strong>{t.email}: </strong>
               <a
-                href="mailto:contact@sportsmesh.com"
+                href={`mailto:${contactConfig.email}`}
                 target="_blank"
                 uno-text="#ffffff"
                 rel="noreferrer"
               >
-                contact@sportsmesh.com
+                {contactConfig.email}
               </a>
             </div>
             <div>

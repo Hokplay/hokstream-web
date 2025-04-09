@@ -1,11 +1,12 @@
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
+import { contactConfig } from '@/config/contactConfig.ts';
 
 function ContactUsButton() {
   const { t } = useTranslation();
 
   return (
     <a
-      href="mailto:contact@sportsmesh.com"
+      href={`mailto:${contactConfig.email}`}
       target="_blank"
       x-class="block max-w-max bg-$Primary cursor-pointer no-underline leading-28px"
       uno-text="#ffffff"

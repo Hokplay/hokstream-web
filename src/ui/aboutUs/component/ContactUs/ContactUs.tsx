@@ -1,4 +1,5 @@
 import type { SupportedLocale } from '@/i18n/SupportedLocale.ts';
+import { contactConfig } from '@/config/contactConfig.ts';
 
 import './ContactUs.scss';
 
@@ -86,7 +87,7 @@ function ContactUs({ locale }: ContactUsProps) {
             {/*  {t.send} ➤*/}
             {/*</button>*/}
             <a
-              href="mailto:contact@sportsmesh.com"
+              href={`mailto:${contactConfig.email}`}
               target="_blank"
               x-class="block ml-auto max-w-max bg-$Primary cursor-pointer no-underline leading-28px"
               uno-text="#ffffff"
