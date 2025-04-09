@@ -51,7 +51,15 @@ function Footer() {
           <h4>{t.sportsmesh}</h4>
           <div className="contact-info">
             <div>
-              <strong>{t.email}:</strong> contact@sportsmesh.com
+              <strong>{t.email}: </strong>
+              <a
+                href="mailto:contact@sportsmesh.com"
+                target="_blank"
+                uno-text="#ffffff"
+                rel="noreferrer"
+              >
+                contact@sportsmesh.com
+              </a>
             </div>
             <div>
               <strong>{t.address}:</strong> {t.addressText}
