@@ -136,21 +136,18 @@ function FeatureCards() {
               {getFeatureContent('multiLocation')}
             </p>
           </div>
-
           <div className="feature-card">
             <h3 className="feature-title">{t.noLearning}</h3>
             <p className="feature-description">
               {getFeatureContent('noLearning')}
             </p>
           </div>
-
           <div className="feature-card">
             <h3 className="feature-title">{t.noGameLimits}</h3>
             <p className="feature-description">
               {getFeatureContent('noGameLimits')}
             </p>
           </div>
-
           <div className="feature-card">
             <h3 className="feature-title">{t.decentralized}</h3>
             <p className="feature-description">

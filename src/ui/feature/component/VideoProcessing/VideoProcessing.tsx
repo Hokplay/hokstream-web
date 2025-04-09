@@ -37,8 +37,9 @@ function VideoProcessing() {
 
         <div className="analysis-cards">
           <div className="analysis-card">
-            <div className="analysis-image">
+            <div className="aspect-640/346 overflow-hidden">
               <img
+                x-class="w-full h-full object-cover"
                 src="/images/v_understands.png"
                 alt="Video processing application"
               />
@@ -50,8 +51,9 @@ function VideoProcessing() {
           </div>
 
           <div className="analysis-card">
-            <div className="analysis-image">
+            <div className="aspect-640/346">
               <img
+                x-class="w-full h-full object-cover"
                 src="/images/video-processing-app.jpg"
                 alt="Game interface with data analysis"
               />

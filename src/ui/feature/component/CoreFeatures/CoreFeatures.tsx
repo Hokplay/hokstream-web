@@ -49,8 +49,9 @@ const CoreFeatures = () => {
           <span>{t.remoteModule}</span>
         </div>
 
-        <div className="main-feature-image">
+        <div className="mb-40px max-w-720px mx-auto overflow-hidden">
           <img
+            x-class="w-full"
             src="/images/broadcasting_interface.png"
             alt="Broadcasting interface"
           />
