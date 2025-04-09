@@ -1,5 +1,5 @@
 export const enUsPrivacyPolicy = {
-  lastUpdated: '更新日期：2025年3月20日',
+  lastUpdated: 'Last Updated: March 20, 2025',
   pageTitle: 'Privacy Policy',
   description:
     'This Privacy Policy applies to the online live-streaming tool provided by our company (hereinafter referred to as "the Service"). Thank you for using the Service. We highly value your privacy and outline below how user data is handled.',
