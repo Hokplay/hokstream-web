@@ -15,10 +15,10 @@ const translations = {
     intro: '簡介',
     successCases: '成功案例',
     features: '功能',
-    aboutUs: '聯絡我們',
+    aboutUs: '關於我們',
     support: '支援',
     privacyPolicy: '隱私權政策',
-    termsOfService: '使用者條款',
+    termsOfUse: '使用者條款',
     copyright: '©2025 SPORTSMESH Inc. All Right Reserved.'
   },
   'en-US': {
@@ -35,7 +35,7 @@ const translations = {
     aboutUs: 'About Us',
     support: 'Support',
     privacyPolicy: 'Privacy Policy',
-    termsOfService: 'Terms of Service',
+    termsOfUse: 'Terms of Use',
     copyright: '©2025 SPORTSMESH Inc. All Right Reserved.'
   }
 };
@@ -92,7 +92,7 @@ function Footer() {
               <Link to={RoutePath.PrivacyPolicy}>{t.privacyPolicy}</Link>
             </li>
             <li>
-              <Link to={RoutePath.TermsOfService}>{t.termsOfService}</Link>
+              <Link to={RoutePath.TermsOfUse}>{t.termsOfUse}</Link>
             </li>
           </ul>
         </div>
