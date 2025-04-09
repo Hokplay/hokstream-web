@@ -31,7 +31,6 @@ function StatsSection() {
     <div
       className="stats-section"
       style={{
-        backgroundColor: '#f8f8f8',
         padding: '40px 0',
         fontFamily: 'Arial, sans-serif'
       }}

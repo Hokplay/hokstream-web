@@ -81,17 +81,18 @@ function SuccessCaseView() {
   const t = translations[locale];
 
   return (
-    <div className="success-cases-page">
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="container">
-          <h1 className="hero-title">{t.whatWeDid}</h1>
-          <div className="hero-image">
-            <img
-              src="https://via.placeholder.com/800x400"
-              alt="eSports streaming setup"
-            />
-          </div>
+    <div x-class="pt-60px">
+      <section x-class="max-w-1200px mx-auto" uno-flex="~">
+        <h1 uno-text="96px">{t.whatWeDid}</h1>
+        <div
+          x-class="max-w-845px aspect-845/644 overflow-hidden"
+          uno-border="rounded-20px"
+        >
+          <img
+            x-class="w-full h-full object-cover"
+            src="/images/CaseStudy_Hero_Image.JPG"
+            alt="eSports streaming setup"
+          />
         </div>
       </section>
 
@@ -106,22 +107,22 @@ function SuccessCaseView() {
 
       {/* Events Gallery Section */}
       <section className="events-section">
-        <div className="container">
+        <div className="container max-w-1200px mx-auto">
           <h2 className="section-title">{t.eventsSection}</h2>
           <p className="events-description">{t.eventsDesc}</p>
 
           <div className="events-gallery">
             <div className="gallery-item">
-              <img src="/images/桃園電競節_1.jpg" alt="Event 1" />
+              <img src="/images/桃園電競節_1.JPG" alt="Event 1" />
             </div>
             <div className="gallery-item">
-              <img src="/images/桃園電競節_2.jpg" alt="Event 2" />
+              <img src="/images/桃園電競節_2.JPG" alt="Event 2" />
             </div>
             <div className="gallery-item">
-              <img src="/images/桃園電競節_3.jpg" alt="Event 3" />
+              <img src="/images/桃園電競節_3.JPG" alt="Event 3" />
             </div>
             <div className="gallery-item">
-              <img src="/images/桃園電競節_4.jpg" alt="Event 4" />
+              <img src="/images/桃園電競節_4.JPG" alt="Event 4" />
             </div>
           </div>
         </div>
@@ -129,7 +130,7 @@ function SuccessCaseView() {
 
       {/* Partners Section */}
       <section className="partners-section">
-        <div className="container">
+        <div className="container max-w-1200px mx-auto">
           <h3 className="partner-title">{t.partner}</h3>
           <div className="partners-logo-container">
             <div className="partner-logo">
@@ -158,7 +159,7 @@ function SuccessCaseView() {
 
       {/* Grassroots Sports Section */}
       <section className="grassroots-section">
-        <div className="container">
+        <div className="container max-w-1200px mx-auto">
           <h2 className="section-title">{t.grassrootsSection}</h2>
           <p className="grassroots-description">{t.grassrootsDesc}</p>
 
@@ -168,7 +169,10 @@ function SuccessCaseView() {
               <p>{t.singleTracking}</p>
             </div>
             <div className="tracking-card outline">
-              <img src="/images/diagram.jpg" alt="Diagram" />
+              <img
+                src="/images/sucessCase/草根社群體育_插畫.png"
+                alt="草根社群體育"
+              />
             </div>
             <div className="tracking-card pink">
               <img src="/images/secondperson.png" alt="Two-person tracking" />
