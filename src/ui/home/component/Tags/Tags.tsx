@@ -21,7 +21,7 @@ function Tags() {
           key={tagKey}
           uno-border="1px solid #595DA7 rounded-20px"
           uno-text="12px #595DA7"
-          x-class="h-23px px-4px py-2px truncate"
+          x-class="leading-17px px-4px py-2px truncate"
         >
           {t(`tag.${tagKey}`)}
         </span>
