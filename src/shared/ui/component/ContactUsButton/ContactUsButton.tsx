@@ -9,7 +9,7 @@ function ContactUsButton({ ...props }) {
       href={`mailto:${contactConfig.email}`}
       target="_blank"
       x-class={[
-        'max-w-max bg-$Primary cursor-pointer no-underline leading-28px',
+        'block max-w-max bg-$Primary cursor-pointer no-underline leading-28px',
         props.className
       ]}
       uno-text="#ffffff"
