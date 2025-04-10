@@ -82,7 +82,7 @@ function SuccessCaseView() {
   const t = translations[locale];
 
   return (
-    <div x-class="px-20px max-w-1200px mx-auto">
+    <div x-class="px-20px lg-px-0 max-w-1200px mx-auto">
       <Banner title={t.whatWeDid} />
 
       {/* Stats Section */}

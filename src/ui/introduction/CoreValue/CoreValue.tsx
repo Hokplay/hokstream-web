@@ -9,7 +9,7 @@ function CoreValue() {
   return (
     <section>
       <h2 uno-text="36px">{data.title[locale]}</h2>
-      <Row gutter={[8, 16]}>
+      <Row gutter={[24, 16]}>
         {data.itemList.map(item => (
           <Col key={item.id} md={12} lg={8}>
             <div>
