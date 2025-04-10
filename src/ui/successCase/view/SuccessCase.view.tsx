@@ -2,6 +2,7 @@ import { useTranslation } from '@/i18n/hook/useTranslation.ts';
 import ProductionStats from '@/ui/successCase/component/ProductionStats/ProductionStats.tsx';
 import TournamentSection from '@/ui/successCase/component/TournamentSection/TournamentSection.tsx';
 import CapabilitiesCarousel from '@/ui/successCase/component/CapabilitiesCarousel/CapabilitiesCarousel.tsx';
+import Banner from '@/ui/successCase/component/Banner/Banner.tsx';
 
 import './SuccessCase.scss';
 
@@ -81,20 +82,8 @@ function SuccessCaseView() {
   const t = translations[locale];
 
   return (
-    <div x-class="pt-60px">
-      <section x-class="max-w-1200px mx-auto" uno-flex="~">
-        <h1 uno-text="96px">{t.whatWeDid}</h1>
-        <div
-          x-class="max-w-845px aspect-845/644 overflow-hidden"
-          uno-border="rounded-20px"
-        >
-          <img
-            x-class="w-full h-full object-cover"
-            src="/images/CaseStudy_Hero_Image.JPG"
-            alt="eSports streaming setup"
-          />
-        </div>
-      </section>
+    <div x-class="px-20px max-w-1200px mx-auto">
+      <Banner title={t.whatWeDid} />
 
       {/* Stats Section */}
       <ProductionStats />
@@ -107,7 +96,7 @@ function SuccessCaseView() {
 
       {/* Events Gallery Section */}
       <section className="events-section">
-        <div className="container max-w-1200px mx-auto">
+        <div className="max-w-1200px mx-auto">
           <h2 className="section-title">{t.eventsSection}</h2>
           <p className="events-description">{t.eventsDesc}</p>
 
@@ -130,7 +119,7 @@ function SuccessCaseView() {
 
       {/* Partners Section */}
       <section className="partners-section">
-        <div className="container max-w-1200px mx-auto">
+        <div className="max-w-1200px mx-auto">
           <h3 className="partner-title">{t.partner}</h3>
           <div className="partners-logo-container">
             <div className="partner-logo">
@@ -159,7 +148,7 @@ function SuccessCaseView() {
 
       {/* Grassroots Sports Section */}
       <section className="grassroots-section">
-        <div className="container max-w-1200px mx-auto">
+        <div className="max-w-1200px mx-auto">
           <h2 className="section-title">{t.grassrootsSection}</h2>
           <p className="grassroots-description">{t.grassrootsDesc}</p>
 

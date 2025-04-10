@@ -35,14 +35,7 @@ function StatsSection() {
         fontFamily: 'Arial, sans-serif'
       }}
     >
-      <div
-        className="container"
-        style={{
-          maxWidth: '1200px',
-          margin: '0 auto',
-          padding: '0 20px'
-        }}
-      >
+      <div>
         <div
           style={{
             display: 'flex',
