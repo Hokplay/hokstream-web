@@ -145,7 +145,7 @@ const images = {
   audioControls: '/images/audio-controls.jpg', // Image 3
   channelSettings: '/images/channel-settings.jpg', // Image 4
   gameInterface: '/images/game-interface.jpg', // Image 5
-  videoProcessing: '/images/video-processing-app.jpg', // Image 6
+  videoProcessing: '/images/features/working.png', // Image 6
   iconLive: '/images/icon-live.png',
   gameCollage: '/images/category_less.png', // New game collage image
   decentralizedDesign: '/images/features/Decentralized-Design.png',
