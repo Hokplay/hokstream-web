@@ -20,7 +20,7 @@ function Header() {
   }));
 
   return (
-    <header x-class="fixed top-0 w-full bg-#ffffff z-60">
+    <header x-class="px-10px fixed top-0 w-full bg-#ffffff z-60">
       <div uno-flex="~ justify-between" x-class="h-80px max-w-1200px mx-auto">
         <Link to="/" x-class="block w-110px">
           <HokStreamLogo />

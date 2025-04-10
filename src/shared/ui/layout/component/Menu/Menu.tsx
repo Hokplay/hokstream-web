@@ -15,7 +15,7 @@ function Menu({ menuList, ...props }: MenuProps) {
   const location = useLocation();
 
   return (
-    <nav uno-flex="~" {...props}>
+    <nav className="md-flex" {...props}>
       {menuList.map(menu => (
         <Link
           key={menu.to}
