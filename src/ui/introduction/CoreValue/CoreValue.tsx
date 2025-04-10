@@ -9,12 +9,12 @@ function CoreValue() {
   return (
     <section>
       <h2 uno-text="36px">{data.title[locale]}</h2>
-      <Row>
+      <Row gutter={[8, 16]}>
         {data.itemList.map(item => (
-          <Col key={item.id}>
-            <div x-class="">
+          <Col key={item.id} md={12} lg={8}>
+            <div>
               <div
-                x-class="w-full lg-w-410px aspect-410/280 overflow-hidden"
+                x-class="w-full aspect-410/280 overflow-hidden"
                 uno-border="rounded-20px"
               >
                 <img
