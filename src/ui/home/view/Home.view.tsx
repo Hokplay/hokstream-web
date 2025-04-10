@@ -1,8 +1,7 @@
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
-import Tags from '@/ui/home/component/Tags/Tags.tsx';
 import Partners from '@/ui/home/component/Partners/Partners.tsx';
-import ContactUsButton from '@/shared/ui/component/ContactUsButton/ContactUsButton.tsx';
 import { translations } from '@/ui/home/translations.ts';
+import Banner from '@/ui/home/component/Banner/Banner.tsx';
 
 import './Home.scss';
 
@@ -11,32 +10,12 @@ function HomeView() {
   const t = translations[locale];
 
   return (
-    <div className="intro-page">
-      <section
-        uno-flex="~ gap-20px items-center"
-        x-class="max-w-1200px mx-auto"
-        uno-p="y-60px"
-      >
-        <div x-class="aspect-628/644 overflow-hidden" uno-border="rounded-20px">
-          <img
-            x-class="w-100% h-100% object-cover object-right"
-            src="/images/Landing_Hero_Image.png"
-            alt="Streaming on phone"
-          />
-        </div>
-        <div>
-          <h1 x-class="my-0" uno-text="96px">
-            {t.sportsmeshTitle}
-          </h1>
-          <Tags />
-          <ContactUsButton />
-        </div>
-      </section>
-
+    <div className="intro-page px-20px max-w-1200px mx-auto">
+      <Banner title={t.sportsmeshTitle} />
       <section className="how-it-works">
         <h2>{t.howItWorks}</h2>
 
-        <div className="comparison">
+        <div className="md-flex-row" uno-flex="~ col items-center gap-30px">
           <div className="traditional bg-#ffffff">
             <h3>{t.traditional}</h3>
             <p>{t.traditionalDesc}</p>
