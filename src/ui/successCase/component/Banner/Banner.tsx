@@ -4,12 +4,9 @@ interface BannerProps {
 
 function Banner({ title }: BannerProps) {
   return (
-    <section x-class="max-w-1200px mx-auto" uno-flex="~">
-      <h1 uno-text="96px">{title}</h1>
-      <div
-        x-class="max-w-845px aspect-845/644 overflow-hidden"
-        uno-border="rounded-20px"
-      >
+    <section x-class="py-30px md-flex-row" uno-flex="~ col justify-between">
+      <h1 x-class="text-50px md-text-60px lg-text-96px">{title}</h1>
+      <div x-class="w-full md-w-65% aspect-845/644 rounded-20px overflow-hidden">
         <img
           x-class="w-full h-full object-cover"
           src="/images/CaseStudy_Hero_Image.JPG"

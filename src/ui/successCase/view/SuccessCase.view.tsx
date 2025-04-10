@@ -82,7 +82,7 @@ function SuccessCaseView() {
   const t = translations[locale];
 
   return (
-    <div x-class="px-20px pt-60px">
+    <div x-class="px-20px max-w-1200px mx-auto">
       <Banner title={t.whatWeDid} />
 
       {/* Stats Section */}
@@ -96,7 +96,7 @@ function SuccessCaseView() {
 
       {/* Events Gallery Section */}
       <section className="events-section">
-        <div className="container max-w-1200px mx-auto">
+        <div className="max-w-1200px mx-auto">
           <h2 className="section-title">{t.eventsSection}</h2>
           <p className="events-description">{t.eventsDesc}</p>
 
@@ -119,7 +119,7 @@ function SuccessCaseView() {
 
       {/* Partners Section */}
       <section className="partners-section">
-        <div className="container max-w-1200px mx-auto">
+        <div className="max-w-1200px mx-auto">
           <h3 className="partner-title">{t.partner}</h3>
           <div className="partners-logo-container">
             <div className="partner-logo">
@@ -148,7 +148,7 @@ function SuccessCaseView() {
 
       {/* Grassroots Sports Section */}
       <section className="grassroots-section">
-        <div className="container max-w-1200px mx-auto">
+        <div className="max-w-1200px mx-auto">
           <h2 className="section-title">{t.grassrootsSection}</h2>
           <p className="grassroots-description">{t.grassrootsDesc}</p>
 
