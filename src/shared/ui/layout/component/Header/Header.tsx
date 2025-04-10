@@ -26,10 +26,10 @@ function Header() {
           <HokStreamLogo />
         </Link>
         <div uno-flex="~ items-center gap-20px">
-          <Menu menuList={menuList} x-class="hidden md-block" />
+          <Menu menuList={menuList} x-class="hidden lg-block" />
           <I18nSelector />
-          <ContactUsButton x-class="hidden md-block" />
-          <BurgerMenu menuList={burgerMenuList} x-class="block md-hidden" />
+          <ContactUsButton x-class="hidden lg-block" />
+          <BurgerMenu menuList={burgerMenuList} x-class="block lg-hidden" />
         </div>
       </div>
     </header>
