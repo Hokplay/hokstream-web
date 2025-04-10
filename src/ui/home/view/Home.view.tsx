@@ -15,7 +15,7 @@ function HomeView() {
       <section className="how-it-works">
         <h2>{t.howItWorks}</h2>
 
-        <div className="comparison">
+        <div className="md-flex-row" uno-flex="~ col items-center gap-30px">
           <div className="traditional bg-#ffffff">
             <h3>{t.traditional}</h3>
             <p>{t.traditionalDesc}</p>
