@@ -1,7 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, SetStateAction } from 'react';
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
 
 /** 需要改用套件 */
+
+interface Slide {
+  title: string;
+  items: string[];
+  image: string;
+  color: string;
+  notes?: string[];
+}
 
 const translations = {
   'zh-TW': {
@@ -81,7 +89,7 @@ function CapabilitiesCarousel() {
     return () => clearInterval(timer);
   }, []);
 
-  const slides = [
+  const slides: Slide[][] = [
     [
       {
         title: t.dynamicCost,
@@ -107,7 +115,7 @@ function CapabilitiesCarousel() {
     ]
   ];
 
-  const goToSlide = index => {
+  const goToSlide = (index: SetStateAction<number>) => {
     setActiveSlide(index);
   };
 
