@@ -9,7 +9,7 @@ const translations = {
   'zh-TW': {
     sportsmesh: 'SPORTSMESH',
     contact: '聯絡',
-    email: '電郵',
+    email: '信箱',
     address: '地址',
     addressText: '103台北市大同區承德路一段70-1號16樓',
     menu: '目錄',
