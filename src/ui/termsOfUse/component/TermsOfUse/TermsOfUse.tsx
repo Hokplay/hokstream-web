@@ -11,11 +11,15 @@ function TermsOfUse() {
       <p uno-text="$Text 20px">{content.description}</p>
       {content.sections.map(section => (
         <section key={section.title} x-class="pl-20px">
-          <h3 x-class="mb-0" uno-text="$Accent 36px">
+          <h3 x-class="mb-0 md-text-36px" uno-text="$Accent 25px">
             {section.title}
           </h3>
           {section.paragraphs.map((paragraph, index) => (
-            <p key={index} x-class="whitespace-pre-line" uno-text="$Text 20px">
+            <p
+              key={index}
+              x-class="whitespace-pre-line md-text-20px"
+              uno-text="$Text 18px"
+            >
               {paragraph}
             </p>
           ))}
