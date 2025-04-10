@@ -128,7 +128,7 @@ function CapabilitiesCarousel() {
         fontFamily: 'Arial, sans-serif'
       }}
     >
-      <div>
+      <div style={{ padding: '0 20px' }}>
         <div
           className="carousel-container"
           style={{
