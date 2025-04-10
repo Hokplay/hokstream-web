@@ -10,7 +10,7 @@ function HomeView() {
   const t = translations[locale];
 
   return (
-    <div className="intro-page">
+    <div className="intro-page px-20px max-w-1200px mx-auto">
       <Banner title={t.sportsmeshTitle} />
       <section className="how-it-works">
         <h2>{t.howItWorks}</h2>
