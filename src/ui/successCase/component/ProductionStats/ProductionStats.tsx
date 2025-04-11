@@ -67,7 +67,7 @@ function StatsSection() {
               {item.title}
             </div>
             <span
-              x-class="text-45px lg-text-64px"
+              x-class="text-42px lg-text-64px"
               uno-text="$Primary"
               uno-font="semibold"
             >
