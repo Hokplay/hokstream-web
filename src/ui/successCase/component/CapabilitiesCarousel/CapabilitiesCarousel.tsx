@@ -11,7 +11,7 @@ function CapabilitiesCarousel() {
     <section x-class="pb-120px">
       <Slider {...carouselSettings} x-class="pb-15px">
         {sliderList.map((slider, index) => (
-          <div key={index} x-class="md-px-10px">
+          <div key={index} x-class="md-px-10px overflow-hidden">
             <div
               x-class="relative min-h-240px aspect-16/9 overflow-hidden"
               uno-border="rounded-20px"
