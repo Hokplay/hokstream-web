@@ -50,13 +50,12 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <h4>{t.sportsmesh}</h4>
-          <div className="contact-info">
+          <div className="contact-info" uno-text="#ccc">
             <div>
               {t.email}:{' '}
               <a
                 href={`mailto:${contactConfig.email}`}
                 target="_blank"
-                uno-text="#ffffff"
                 rel="noreferrer"
               >
                 {contactConfig.email}
