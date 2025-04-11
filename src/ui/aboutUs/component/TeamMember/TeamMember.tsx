@@ -25,7 +25,7 @@ function TeamMember() {
           <div
             className="member-image"
             style={{
-              backgroundImage: 'url(/images/Kevin_Pai_Placeholder.png)'
+              backgroundImage: 'url(/images/aboutUs/Kevin_Pai_Placeholder.png)'
             }}
           ></div>
           <h3 className="member-name">KEVIN PAI</h3>

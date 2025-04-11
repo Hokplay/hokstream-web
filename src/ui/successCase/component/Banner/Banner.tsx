@@ -9,7 +9,7 @@ function Banner({ title }: BannerProps) {
       <div x-class="w-full md-w-65% aspect-845/644 rounded-20px overflow-hidden">
         <img
           x-class="w-full h-full object-cover"
-          src="/images/CaseStudy_Hero_Image.JPG"
+          src="/images/caseStudy/CaseStudy_Hero_Image.JPG"
           alt="eSports streaming setup"
         />
       </div>

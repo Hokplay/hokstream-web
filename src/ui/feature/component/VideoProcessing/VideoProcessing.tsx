@@ -40,7 +40,7 @@ function VideoProcessing() {
             <div className="aspect-640/346 overflow-hidden">
               <img
                 x-class="w-full h-full object-cover"
-                src="/images/v_understands.png"
+                src="/images/features/v_understands.png"
                 alt="Video processing application"
               />
             </div>
@@ -54,7 +54,7 @@ function VideoProcessing() {
             <div className="aspect-640/346">
               <img
                 x-class="w-full h-full object-cover"
-                src="/images/video-processing-app.jpg"
+                src="/images/features/video-processing-app.jpg"
                 alt="Game interface with data analysis"
               />
             </div>
