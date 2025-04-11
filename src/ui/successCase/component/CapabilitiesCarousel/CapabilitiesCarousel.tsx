@@ -22,20 +22,22 @@ function CapabilitiesCarousel() {
                 alt={slider.title}
               />
               <div
-                x-class="absolute h-full w-120px md-w-150px lg-w-200px md-px-20px left-0 top-0 lg-py-40px bg-white/60 backdrop-blur-[20px]"
-                uno-p="x-10px y-20px"
+                x-class="absolute h-full w-120px md-w-150px lg-w-200px lg-px-[10px_10px_10px_0] left-0 top-0 xl-py-20px bg-white/60 backdrop-blur-[20px]"
+                uno-p="x-10px y-10px"
               >
-                <h3 x-class="my-0 lg-text-24px" uno-text="20px $Primary">
+                <h3 x-class="my-0 xl-text-24px" uno-text="18px $Primary">
                   {slider.title}
                 </h3>
-                <ul x-class="pl-20px">
+                <ul x-class="pl-0 list-none">
                   {slider.list.map((listItem, i) => (
                     <li
                       key={i}
-                      uno-text="12px"
-                      x-class="md-text-16px lg-text-20px"
+                      uno-text="12px $Secondary"
+                      x-class="md-text-16px xl-text-20px"
+                      uno-flex="~ gap-10px"
                     >
-                      {listItem}
+                      <span>•</span>
+                      <span>{listItem}</span>
                     </li>
                   ))}
                 </ul>
