@@ -102,8 +102,8 @@ function SuccessCaseView() {
 
           <div
             className="sm-grid
-              grid-cols-[33.33%_33.33%_33.33%]
-              grid-rows-[300px_300px]
+              grid-cols-[1_1_1]
+              grid-rows-[1_1]
               grid-flow-col
               gap-2"
           >
