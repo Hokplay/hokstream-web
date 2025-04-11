@@ -6,6 +6,7 @@ export const carouselSettings = {
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 4000,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1200,
