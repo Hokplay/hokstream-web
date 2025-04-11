@@ -3,6 +3,7 @@ import ProductionStats from '@/ui/successCase/component/ProductionStats/Producti
 import TournamentSection from '@/ui/successCase/component/TournamentSection/TournamentSection.tsx';
 import CapabilitiesCarousel from '@/ui/successCase/component/CapabilitiesCarousel/CapabilitiesCarousel.tsx';
 import Banner from '@/ui/successCase/component/Banner/Banner.tsx';
+import Icon from '@/shared/ui/component/Icon/Icon.tsx';
 
 import './SuccessCase.scss';
 
@@ -194,12 +195,8 @@ function SuccessCaseView() {
             uno-flex="~ justify-between items-start gap-5px"
           >
             <div className="relative top-[-70px] md-top-0 p-[0_4px_4px_4px] lg-p-[0_8px_8px_8px] bg-#46D3CA rounded-12px z-2 flex-1">
-              <div x-class="py-8px text-center">
-                <img
-                  x-class="w-20px lg-w-40px align-middle"
-                  src="/images/caseStudy/camera_icon.svg"
-                  alt="camera icon"
-                />
+              <div x-class="py-8px lg-py-15px text-center">
+                <Icon name="Camera" x-class="w-20px lg-w-40px align-middle" />
               </div>
               <div x-class="aspect-160/90 bg-#ffffff rounded-12px">
                 <img
@@ -218,17 +215,13 @@ function SuccessCaseView() {
             <div x-class="absolute w-full bottom-100% md-static md-w-50%">
               <img
                 x-class="w-full h-full object-cover align-middle"
-                src="/images/caseStudy/草根社群體育_插畫.svg"
+                src="/src/shared/ui/asset/icon/basketball.svg"
                 alt="草根社群體育"
               />
             </div>
-            <div className="relative top-[-40px] md-top-0 p-4px pt-0 lg-p-8px bg-#FC2F70 rounded-12px z-2 flex-1">
-              <div x-class="py-8px text-center">
-                <img
-                  x-class="w-20px lg-w-40px align-middle"
-                  src="/images/caseStudy/camera_icon.svg"
-                  alt="camera icon"
-                />
+            <div className="relative top-[-40px] md-top-0 p-[0_4px_4px_4px] lg-p-[0_8px_8px_8px] bg-#FC2F70 rounded-12px z-2 flex-1">
+              <div x-class="py-8px lg-py-15px text-center">
+                <Icon name="Camera" x-class="w-20px lg-w-40px align-middle" />
               </div>
               <div x-class="aspect-160/90 bg-#ffffff rounded-12px">
                 <img
