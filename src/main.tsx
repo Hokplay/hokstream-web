@@ -5,6 +5,9 @@ import 'core-js/stable';
 import 'virtual:uno.css';
 import 'virtual:unocss-devtools';
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import { I18nextProvider } from 'react-i18next';
 import i18n from '@/i18n/i18n.ts';
 import { AntdProvider } from '@/shared/ui/context/Antd.context.tsx';

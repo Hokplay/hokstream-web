@@ -32,7 +32,9 @@
     "react-fast-marquee": "^1.6.5",
     "react-i18next": "^15.4.0",
     "react-router-dom": "^7.1.5",
+    "react-slick": "^0.30.3",
     "react-use": "^17.6.0",
+    "slick-carousel": "^1.8.1",
     "throttle-debounce": "^5.0.2",
     "valtio": "^1.13.2"
   },
@@ -46,6 +48,7 @@
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
+    "@types/react-slick": "^0.23.13",
     "@typescript-eslint/eslint-plugin": "^8.18.2",
     "@typescript-eslint/parser": "^8.18.2",
     "@vitejs/plugin-legacy": "^6.0.0",
