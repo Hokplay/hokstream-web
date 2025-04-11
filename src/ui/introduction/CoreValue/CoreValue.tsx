@@ -24,8 +24,8 @@ function CoreValue() {
                 />
               </div>
               <p
-                x-class="mt-10px"
-                uno-text="$Primary 24px center"
+                x-class="mt-10px lg-text-24px"
+                uno-text="$Primary 20px center"
                 uno-font="bold"
               >
                 {item.description[locale]}
