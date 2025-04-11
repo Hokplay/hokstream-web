@@ -46,7 +46,7 @@ function Footer() {
   const t = translations[locale];
 
   return (
-    <footer className="footer">
+    <footer className="footer bg-$Secondary rounded-[40px_40px_0_0]">
       <div className="footer-container">
         <div className="footer-section">
           <h4>{t.sportsmesh}</h4>
