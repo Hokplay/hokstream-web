@@ -4,159 +4,77 @@ const translations = {
   'zh-TW': {
     title: '社群製作爆發成長',
     subtitle: '更好、更便宜、更快速',
-    productionCost: '製作成本下降',
-    contentAmount: '內容數量提升',
-    responseTime: '訊源互動延遲時間',
-    percent: '90%',
-    times: '10x',
-    seconds: '<1s'
+    data: [
+      {
+        title: '製作成本下降',
+        stat: '90%'
+      },
+      {
+        title: '內容數量提升',
+        stat: '10x%'
+      },
+      {
+        title: '訊源互動延遲時間',
+        stat: '<1s'
+      }
+    ]
   },
   'en-US': {
     title: 'Social Media Production Growth',
     subtitle: 'Better, Cheaper, Faster',
-    productionCost: 'Production Cost Reduction',
-    contentAmount: 'Content Quantity Increase',
-    responseTime: 'Source Interaction Delay',
-    percent: '90%',
-    times: '10x',
-    seconds: '<1s'
+    data: [
+      {
+        title: 'Production Cost Reduction',
+        stat: '90%'
+      },
+      {
+        title: 'Content Quantity Increase',
+        stat: '10x%'
+      },
+      {
+        title: 'Source Interaction Delay',
+        stat: '<1s'
+      }
+    ]
   }
 };
 
 function StatsSection() {
   const { locale } = useTranslation();
-  const t = translations[locale];
+  const content = translations[locale];
 
   return (
-    <div
-      className="stats-section"
-      style={{
-        padding: '40px 0',
-        fontFamily: 'Arial, sans-serif'
-      }}
-    >
-      <div>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            marginBottom: '20px'
-          }}
-        >
-          <h1
-            style={{
-              fontSize: '2.5rem',
-              fontWeight: 'bold',
-              textAlign: 'left',
-              margin: 0
-            }}
-          >
-            {t.title}
-          </h1>
-        </div>
+    <div className="py-40px">
+      <h1 x-class="m-0 text-lg-36px" uno-text="32px">
+        {content.title}
+      </h1>
+      <p x-class="mt-5px mb-40px" uno-text="$Text 20px">
+        {content.subtitle}
+      </p>
 
-        <p
-          style={{
-            fontSize: '1.2rem',
-            color: '#888',
-            marginBottom: '40px',
-            textAlign: 'left'
-          }}
-        >
-          {t.subtitle}
-        </p>
-
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            flexWrap: 'wrap'
-          }}
-        >
-          <div style={{ flex: 1, textAlign: 'center', padding: '0 15px' }}>
+      <div uno-flex="~ justify-space-between wrap">
+        {content.data.map((item, index) => (
+          <div key={item.title} x-class="relative px-8px text-center flex-1">
             <div
-              style={{
-                color: '#666',
-                fontSize: '1rem',
-                marginBottom: '10px'
-              }}
-            >
-              {t.productionCost}
-            </div>
+              x-if={index !== 0}
+              x-class="absolute top-0 left-0 w-1px h-full bg-#ddd"
+            />
             <div
-              style={{
-                color: '#F15A22',
-                fontSize: '5rem',
-                fontWeight: 'bold',
-                lineHeight: '1'
-              }}
+              x-class="mb-10px md-text-16px"
+              uno-text="12px $Accent"
+              uno-font="semibold"
             >
-              {t.percent}
+              {item.title}
             </div>
+            <span
+              x-class="text-45px lg-text-64px"
+              uno-text="$Primary"
+              uno-font="semibold"
+            >
+              {item.stat}
+            </span>
           </div>
-
-          <div
-            style={{
-              width: '1px',
-              height: '80px',
-              backgroundColor: '#ddd'
-            }}
-          ></div>
-
-          <div style={{ flex: 1, textAlign: 'center', padding: '0 15px' }}>
-            <div
-              style={{
-                color: '#666',
-                fontSize: '1rem',
-                marginBottom: '10px'
-              }}
-            >
-              {t.contentAmount}
-            </div>
-            <div
-              style={{
-                color: '#F15A22',
-                fontSize: '5rem',
-                fontWeight: 'bold',
-                lineHeight: '1'
-              }}
-            >
-              {t.times}
-            </div>
-          </div>
-
-          <div
-            style={{
-              width: '1px',
-              height: '80px',
-              backgroundColor: '#ddd'
-            }}
-          ></div>
-
-          <div style={{ flex: 1, textAlign: 'center', padding: '0 15px' }}>
-            <div
-              style={{
-                color: '#666',
-                fontSize: '1rem',
-                marginBottom: '10px'
-              }}
-            >
-              {t.responseTime}
-            </div>
-            <div
-              style={{
-                color: '#F15A22',
-                fontSize: '5rem',
-                fontWeight: 'bold',
-                lineHeight: '1'
-              }}
-            >
-              {t.seconds}
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
