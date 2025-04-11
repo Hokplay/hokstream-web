@@ -123,7 +123,7 @@ function TournamentSection() {
         <div x-class="max-w-800px aspect-800/450 overflow-hidden mb-30px mx-auto">
           <img
             x-class="w-full h-full object-cover"
-            src="/images/caseStudy/CaseStudy_萬能科技大學現場.png"
+            src="/images/caseStudy/CaseStudy_萬能科技大學現場.webp"
             alt="League of Legends Tournament Setup"
           />
         </div>

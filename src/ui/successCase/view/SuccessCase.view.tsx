@@ -109,28 +109,28 @@ function SuccessCaseView() {
           >
             <div className="row-span-2">
               <img
-                src="/images/caseStudy/桃園電競節_1.JPG"
+                src="/images/caseStudy/桃園電競節_1.webp"
                 alt="Event 1"
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
               <img
-                src="/images/caseStudy/桃園電競節_2.JPG"
+                src="/images/caseStudy/桃園電競節_2.webp"
                 alt="Event 2"
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
               <img
-                src="/images/caseStudy/桃園電競節_3.JPG"
+                src="/images/caseStudy/桃園電競節_3.webp"
                 alt="Event 3"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="row-span-2">
               <img
-                src="/images/caseStudy/桃園電競節_4.JPG"
+                src="/images/caseStudy/桃園電競節_4.webp"
                 alt="Event 4"
                 className="w-full h-full object-cover"
               />
