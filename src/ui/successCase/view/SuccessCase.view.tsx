@@ -100,18 +100,40 @@ function SuccessCaseView() {
           <h2 className="section-title">{t.eventsSection}</h2>
           <p className="events-description">{t.eventsDesc}</p>
 
-          <div className="events-gallery">
-            <div className="gallery-item">
-              <img src="/images/桃園電競節_1.JPG" alt="Event 1" />
+          <div
+            className="sm-grid
+              grid-cols-[33.33%_33.33%_33.33%]
+              grid-rows-[300px_300px]
+              grid-flow-col
+              gap-2"
+          >
+            <div className="row-span-2">
+              <img
+                src="/images/桃園電競節_1.JPG"
+                alt="Event 1"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="gallery-item">
-              <img src="/images/桃園電競節_2.JPG" alt="Event 2" />
+            <div>
+              <img
+                src="/images/桃園電競節_2.JPG"
+                alt="Event 2"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="gallery-item">
-              <img src="/images/桃園電競節_3.JPG" alt="Event 3" />
+            <div>
+              <img
+                src="/images/桃園電競節_3.JPG"
+                alt="Event 3"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="gallery-item">
-              <img src="/images/桃園電競節_4.JPG" alt="Event 4" />
+            <div className="row-span-2">
+              <img
+                src="/images/桃園電競節_4.JPG"
+                alt="Event 4"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
