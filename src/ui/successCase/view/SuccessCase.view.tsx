@@ -82,7 +82,7 @@ function SuccessCaseView() {
   const t = translations[locale];
 
   return (
-    <div x-class="px-20px xl-px-0 max-w-1200px mx-auto">
+    <div x-class="px-16px xl-px-0 max-w-1200px mx-auto">
       <Banner title={t.whatWeDid} />
 
       {/* Stats Section */}
@@ -184,31 +184,65 @@ function SuccessCaseView() {
       </section>
 
       {/* Grassroots Sports Section */}
-      <section className="grassroots-section">
+      <section className="p-[40px_0_60px]">
         <div className="max-w-1200px mx-auto">
           <h2 className="section-title">{t.grassrootsSection}</h2>
           <p className="grassroots-description">{t.grassrootsDesc}</p>
 
-          <div className="tracking-cards">
-            <div className="tracking-card green">
-              <img
-                src="/images/caseStudy/thirdperson.png"
-                alt="Single-person tracking"
-              />
-              <p>{t.singleTracking}</p>
+          <div
+            x-class="relative mt-60% md-mt-0 md-flex-items-center"
+            uno-flex="~ justify-between items-start gap-5px"
+          >
+            <div className="relative top-[-70px] md-top-0 p-[0_4px_4px_4px] lg-p-[0_8px_8px_8px] bg-#46D3CA rounded-12px z-2 flex-1">
+              <div x-class="py-8px text-center">
+                <img
+                  x-class="w-20px lg-w-40px align-middle"
+                  src="/images/caseStudy/camera_icon.svg"
+                  alt="camera icon"
+                />
+              </div>
+              <div x-class="aspect-160/90 bg-#ffffff rounded-12px">
+                <img
+                  x-class="w-full h-full object-cover align-middle"
+                  src="/images/caseStudy/thirdperson.png"
+                  alt="Single-person tracking"
+                />
+                <p
+                  x-class="my-0 p-[15px_0_30px_15px] md-p-[15px_15px]"
+                  uno-font="bold"
+                >
+                  {t.singleTracking}
+                </p>
+              </div>
             </div>
-            <div className="tracking-card outline">
+            <div x-class="absolute w-full bottom-100% md-static md-w-50%">
               <img
-                src="/images/caseStudy/草根社群體育_插畫.png"
+                x-class="w-full h-full object-cover align-middle"
+                src="/images/caseStudy/草根社群體育_插畫.svg"
                 alt="草根社群體育"
               />
             </div>
-            <div className="tracking-card pink">
-              <img
-                src="/images/caseStudy/secondperson.png"
-                alt="Two-person tracking"
-              />
-              <p>{t.doubleTracking}</p>
+            <div className="relative top-[-40px] md-top-0 p-4px pt-0 lg-p-8px bg-#FC2F70 rounded-12px z-2 flex-1">
+              <div x-class="py-8px text-center">
+                <img
+                  x-class="w-20px lg-w-40px align-middle"
+                  src="/images/caseStudy/camera_icon.svg"
+                  alt="camera icon"
+                />
+              </div>
+              <div x-class="aspect-160/90 bg-#ffffff rounded-12px">
+                <img
+                  x-class="w-full h-full object-cover align-middle"
+                  src="/images/caseStudy/secondperson.png"
+                  alt="Two-person tracking"
+                />
+                <p
+                  x-class="my-0 p-[15px_0_30px_15px] md-p-[15px_15px]"
+                  uno-font="bold"
+                >
+                  {t.doubleTracking}
+                </p>
+              </div>
             </div>
           </div>
         </div>
