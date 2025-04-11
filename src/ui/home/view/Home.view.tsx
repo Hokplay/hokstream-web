@@ -22,12 +22,12 @@ function HomeView() {
             <div className="flow-diagram">
               <img
                 x-if={locale === 'zh-TW'}
-                src="/images/home/ZH_traditional_brocasting.png"
+                src="/images/ZH_traditional_brocasting.png"
                 alt="傳統製作流程"
               />
               <img
                 x-if={locale === 'en-US'}
-                src="/images/home/EN_tradtional.png"
+                src="/images/EN_tradtional.png"
                 alt="傳統製作流程"
               />
             </div>
@@ -41,12 +41,12 @@ function HomeView() {
             <div className="flow-diagram">
               <img
                 x-if={locale === 'zh-TW'}
-                src="/images/home/ZH_social_broadcasting.png"
+                src="/images/ZH_social_broadcasting.png"
                 alt="社群製作流程"
               />
               <img
                 x-if={locale === 'en-US'}
-                src="/images/home/EN_social.png"
+                src="/images/EN_social.png"
                 alt="Community production"
               />
             </div>

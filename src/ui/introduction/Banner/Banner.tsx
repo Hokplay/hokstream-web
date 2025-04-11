@@ -19,7 +19,7 @@ function Banner() {
       <div x-class="w-full md-w-65% aspect-845/644 rounded-20px overflow-hidden">
         <img
           x-class="w-full h-full"
-          src="/images/introduction/Introduction_Hero_Placeholder_Video.png"
+          src="/images/Introduction_Hero_Placeholder_Video.png"
           alt="Introduction_Hero_Placeholder_Video"
         />
       </div>
