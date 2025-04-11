@@ -21,7 +21,7 @@ function Banner({ title }: BannerProps) {
       >
         <img
           x-class="w-100% h-100% object-cover object-right"
-          src="/images/Landing_Hero_Image.png"
+          src="/images/home/Landing_Hero_Image.png"
           alt="Streaming on phone"
         />
       </div>
