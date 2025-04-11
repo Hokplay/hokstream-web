@@ -52,7 +52,7 @@ function Footer() {
           <h4>{t.sportsmesh}</h4>
           <div className="contact-info">
             <div>
-              <strong>{t.email}: </strong>
+              {t.email}:{' '}
               <a
                 href={`mailto:${contactConfig.email}`}
                 target="_blank"
@@ -63,7 +63,7 @@ function Footer() {
               </a>
             </div>
             <div>
-              <strong>{t.address}:</strong> {t.addressText}
+              {t.address}: {t.addressText}
             </div>
           </div>
         </div>
