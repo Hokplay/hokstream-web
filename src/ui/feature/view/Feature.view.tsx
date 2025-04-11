@@ -140,17 +140,21 @@ const translations = {
 
 // Define real image paths - assuming images are stored in the public folder
 const images = {
-  heroImage: '/images/features/faces-collage.jpg', // Image 1
+  heroImage: '/images/faces-collage.jpg', // Image 1
   broadcastSetup: '/images/features/Multi-Location-Remote-Production.png', // Image 2
+  audioControls: '/images/audio-controls.jpg', // Image 3
+  channelSettings: '/images/channel-settings.jpg', // Image 4
+  gameInterface: '/images/game-interface.jpg', // Image 5
   videoProcessing: '/images/features/working.png', // Image 6
-  iconLive: '/images/features/icon-live.png',
-  gameCollage: '/images/features/category_less.png', // New game collage image
+  iconLive: '/images/icon-live.png',
+  gameCollage: '/images/category_less.png', // New game collage image
   decentralizedDesign: '/images/features/Decentralized-Design.png',
-  iconResource: '/images/features/icon-resource.png',
-  iconAnalytics: '/images/features/Web3去中心化-icon.png',
-  iconProtection: '/images/features/learning_curve-icon.png',
-  iconFlexibility: '/images/features/catless-icon.png',
-  iconCollaboration: '/images/features/reinforce_cat-icon.png'
+  iconResource: '/images/icon-resource.png',
+  iconAnalytics: '/images/Web3去中心化-icon.png',
+  iconProtection: '/images/learning_curve-icon.png',
+  iconFlexibility: '/images/catless-icon.png',
+  iconCollaboration: '/images/reinforce_cat-icon.png',
+  networkBg: '/images/network-bg.png'
 };
 
 function FeatureView() {

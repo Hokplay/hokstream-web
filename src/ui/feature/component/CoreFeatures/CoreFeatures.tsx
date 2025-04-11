@@ -52,7 +52,7 @@ const CoreFeatures = () => {
         <div className="mb-40px max-w-720px mx-auto overflow-hidden">
           <img
             x-class="w-full"
-            src="/images/features/broadcasting_interface.png"
+            src="/images/broadcasting_interface.png"
             alt="Broadcasting interface"
           />
         </div>
@@ -61,7 +61,7 @@ const CoreFeatures = () => {
           <div className="feature-card">
             <div className="feature-image">
               <img
-                src="/images/features/start_animate.png"
+                src="/images/features/線上字卡_開頭動畫.png"
                 alt="Online subtitles and animations"
               />
             </div>
@@ -73,10 +73,7 @@ const CoreFeatures = () => {
 
           <div className="feature-card">
             <div className="feature-image">
-              <img
-                src="/images/features/low_latency.png"
-                alt="Remote interaction"
-              />
+              <img src="/images/low_latency.png" alt="Remote interaction" />
             </div>
             <div className="feature-content">
               <div className="feature-title">{t.remoteInteraction}</div>
@@ -88,10 +85,7 @@ const CoreFeatures = () => {
 
           <div className="feature-card">
             <div className="feature-image">
-              <img
-                src="/images/features/flow.png"
-                alt="Event process management"
-              />
+              <img src="/images/flow.png" alt="Event process management" />
             </div>
             <div className="feature-content">
               <div className="feature-title">{t.eventProcess}</div>
@@ -102,7 +96,7 @@ const CoreFeatures = () => {
           <div className="feature-card">
             <div className="feature-image">
               <img
-                src="/images/features/signals.png"
+                src="/images/signals.png"
                 alt="Multi-location signal sources"
               />
             </div>

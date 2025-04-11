@@ -109,28 +109,28 @@ function SuccessCaseView() {
           >
             <div className="row-span-2">
               <img
-                src="/images/caseStudy/桃園電競節_1.webp"
+                src="/images/桃園電競節_1.JPG"
                 alt="Event 1"
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
               <img
-                src="/images/caseStudy/桃園電競節_2.webp"
+                src="/images/桃園電競節_2.JPG"
                 alt="Event 2"
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
               <img
-                src="/images/caseStudy/桃園電競節_3.webp"
+                src="/images/桃園電競節_3.JPG"
                 alt="Event 3"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="row-span-2">
               <img
-                src="/images/caseStudy/桃園電競節_4.webp"
+                src="/images/桃園電競節_4.JPG"
                 alt="Event 4"
                 className="w-full h-full object-cover"
               />
@@ -145,38 +145,23 @@ function SuccessCaseView() {
           <h3 className="partner-title">{t.partner}</h3>
           <div className="partners-logo-container">
             <div className="partner-logo">
-              <img
-                src="/images/caseStudy/Schools_Logo/健行科大.png"
-                alt="Partner 1"
-              />
+              <img src="/images/Schools_Logo/健行科大.png" alt="Partner 1" />
               <span>健行科大</span>
             </div>
             <div className="partner-logo">
-              <img
-                src="/images/caseStudy/Schools_Logo/樹德科大.png"
-                alt="Partner 2"
-              />
+              <img src="/images/Schools_Logo/樹德科大.png" alt="Partner 2" />
               <span>樹德科大</span>
             </div>
             <div className="partner-logo">
-              <img
-                src="/images/caseStudy/Schools_Logo/永平工商.png"
-                alt="Partner 3"
-              />
+              <img src="/images/Schools_Logo/永平工商.png" alt="Partner 3" />
               <span>永平工商</span>
             </div>
             <div className="partner-logo">
-              <img
-                src="/images/caseStudy/Schools_Logo/萬能科大.png"
-                alt="Partner 4"
-              />
+              <img src="/images/Schools_Logo/萬能科大.png" alt="Partner 4" />
               <span>萬能科大</span>
             </div>
             <div className="partner-logo">
-              <img
-                src="/images/caseStudy/Schools_Logo/黎明科大.png"
-                alt="Partner 5"
-              />
+              <img src="/images/Schools_Logo/黎明科大.png" alt="Partner 5" />
               <span>黎明科大</span>
             </div>
           </div>
@@ -191,23 +176,17 @@ function SuccessCaseView() {
 
           <div className="tracking-cards">
             <div className="tracking-card green">
-              <img
-                src="/images/caseStudy/thirdperson.png"
-                alt="Single-person tracking"
-              />
+              <img src="/images/thirdperson.png" alt="Single-person tracking" />
               <p>{t.singleTracking}</p>
             </div>
             <div className="tracking-card outline">
               <img
-                src="/images/caseStudy/草根社群體育_插畫.png"
+                src="/images/successCase/草根社群體育_插畫.png"
                 alt="草根社群體育"
               />
             </div>
             <div className="tracking-card pink">
-              <img
-                src="/images/caseStudy/secondperson.png"
-                alt="Two-person tracking"
-              />
+              <img src="/images/secondperson.png" alt="Two-person tracking" />
               <p>{t.doubleTracking}</p>
             </div>
           </div>
