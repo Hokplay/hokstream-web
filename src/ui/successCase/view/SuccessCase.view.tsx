@@ -213,10 +213,9 @@ function SuccessCaseView() {
               </div>
             </div>
             <div x-class="absolute w-full bottom-100% md-static md-w-50%">
-              <img
+              <Icon
+                name="Basketball"
                 x-class="w-full h-full object-cover align-middle"
-                src="/src/shared/ui/asset/icon/basketball.svg"
-                alt="草根社群體育"
               />
             </div>
             <div className="relative top-[-40px] md-top-0 p-[0_4px_4px_4px] lg-p-[0_8px_8px_8px] bg-#FC2F70 rounded-12px z-2 flex-1">
