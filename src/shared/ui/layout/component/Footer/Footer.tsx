@@ -46,24 +46,23 @@ function Footer() {
   const t = translations[locale];
 
   return (
-    <footer className="footer">
+    <footer className="footer bg-$Secondary rounded-[40px_40px_0_0]">
       <div className="footer-container">
         <div className="footer-section">
           <h4>{t.sportsmesh}</h4>
-          <div className="contact-info">
+          <div className="contact-info" uno-text="#ccc">
             <div>
-              <strong>{t.email}: </strong>
+              {t.email}:{' '}
               <a
                 href={`mailto:${contactConfig.email}`}
                 target="_blank"
-                uno-text="#ffffff"
                 rel="noreferrer"
               >
                 {contactConfig.email}
               </a>
             </div>
             <div>
-              <strong>{t.address}:</strong> {t.addressText}
+              {t.address}: {t.addressText}
             </div>
           </div>
         </div>
