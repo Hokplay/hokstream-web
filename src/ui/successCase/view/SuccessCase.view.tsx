@@ -195,17 +195,19 @@ function SuccessCaseView() {
             uno-flex="~ justify-between items-start gap-5px"
           >
             <div className="relative top-[-70px] md-top-0 p-[0_4px_4px_4px] lg-p-[0_8px_8px_8px] bg-#46D3CA rounded-12px z-2 flex-1">
-              <div x-class="py-8px lg-py-15px text-center">
+              <div x-class="lg-py-15px text-center">
                 <Icon name="Camera" x-class="w-20px lg-w-40px align-middle" />
               </div>
-              <div x-class="aspect-160/90 bg-#ffffff rounded-12px">
-                <img
-                  x-class="w-full h-full object-cover align-middle"
-                  src="/images/caseStudy/thirdperson.png"
-                  alt="Single-person tracking"
-                />
+              <div x-class="rounded-12px overflow-hidden">
+                <div x-class="aspect-160/90 bg-#ffffff">
+                  <img
+                    x-class="w-full h-full object-cover align-middle"
+                    src="/images/caseStudy/thirdperson.png"
+                    alt="Single-person tracking"
+                  />
+                </div>
                 <p
-                  x-class="my-0 p-[15px_0_30px_15px] md-p-[15px_15px]"
+                  x-class="my-0 p-[15px_0_30px_15px] md-p-[15px_15px] bg-#ffffff"
                   uno-font="bold"
                 >
                   {t.singleTracking}
@@ -219,17 +221,19 @@ function SuccessCaseView() {
               />
             </div>
             <div className="relative top-[-40px] md-top-0 p-[0_4px_4px_4px] lg-p-[0_8px_8px_8px] bg-#FC2F70 rounded-12px z-2 flex-1">
-              <div x-class="py-8px lg-py-15px text-center">
+              <div x-class="lg-py-15px text-center">
                 <Icon name="Camera" x-class="w-20px lg-w-40px align-middle" />
               </div>
-              <div x-class="aspect-160/90 bg-#ffffff rounded-12px">
-                <img
-                  x-class="w-full h-full object-cover align-middle"
-                  src="/images/caseStudy/secondperson.png"
-                  alt="Two-person tracking"
-                />
+              <div x-class="rounded-12px overflow-hidden">
+                <div x-class="aspect-160/90">
+                  <img
+                    x-class="w-full h-full object-cover align-middle"
+                    src="/images/caseStudy/secondperson.png"
+                    alt="Two-person tracking"
+                  />
+                </div>
                 <p
-                  x-class="my-0 p-[15px_0_30px_15px] md-p-[15px_15px]"
+                  x-class="my-0 p-[15px_0_30px_15px] md-p-[15px_15px] bg-#ffffff"
                   uno-font="bold"
                 >
                   {t.doubleTracking}
