@@ -5,10 +5,10 @@ import ScrollToTop from '@/shared/ui/layout/component/ScrollToTop/ScrollToTop.ts
 
 function MainLayout() {
   return (
-    <div>
+    <div x-class="bg-#F2F2F2">
       <ScrollToTop />
       <Header />
-      <main x-class="bg-#F2F2F2 pt-80px">
+      <main x-class="pt-80px">
         <Outlet />
       </main>
       <Footer />
