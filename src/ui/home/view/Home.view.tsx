@@ -11,7 +11,7 @@ function HomeView() {
 
   return (
     <>
-      <div className="intro-page px-20px lg-px-0 max-w-1200px mx-auto">
+      <div className="intro-page px-20px xl-px-0 max-w-1200px mx-auto">
         <Banner title={t.sportsmeshTitle} />
         <section className="how-it-works">
           <h2>{t.howItWorks}</h2>
