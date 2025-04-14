@@ -25,18 +25,16 @@ function ScenariosSection() {
   }
 
   return (
-    <div>
+    <>
       <Affix offsetTop={80}>
         <div x-class="py-3px bg-$Accent">
-          <div x-class="max-w-1200px mx-auto">
-            <Segmented
-              x-class="segmented"
-              options={options}
-              block
-              shape="round"
-              onChange={onChange}
-            />
-          </div>
+          <Segmented
+            x-class="segmented max-w-1200px mx-auto"
+            options={options}
+            block
+            shape="round"
+            onChange={onChange}
+          />
         </div>
       </Affix>
       <div x-class="px-16px xl-px-0 max-w-1200px mx-auto">
@@ -48,7 +46,7 @@ function ScenariosSection() {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 }
 
