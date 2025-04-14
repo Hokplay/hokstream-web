@@ -14,7 +14,20 @@ interface AntdConfigProviderProps {
 
 function AntdConfigProvider({ configs, children }: AntdConfigProviderProps) {
   return (
-    <ConfigProvider locale={configs.locale} button={{ autoInsertSpace: false }}>
+    <ConfigProvider
+      locale={configs.locale}
+      button={{ autoInsertSpace: false }}
+      theme={{
+        components: {
+          Segmented: {
+            trackBg: '#595DA7',
+            itemColor: '#ffffff',
+            itemHoverColor: '#ffffff',
+            itemHoverBg: '#595DA7'
+          }
+        }
+      }}
+    >
       {children}
     </ConfigProvider>
   );
