@@ -22,7 +22,7 @@ function AntdConfigProvider({ configs, children }: AntdConfigProviderProps) {
           Segmented: {
             trackBg: '#595DA7',
             itemColor: '#ffffff',
-            itemHoverColor: '#ffffff',
+            itemHoverColor: '#B4B6B8',
             itemHoverBg: '#595DA7'
           }
         }

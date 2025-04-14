@@ -29,7 +29,7 @@ function ScenariosSection() {
       <Affix offsetTop={80}>
         <div x-class="py-3px bg-$Accent">
           <Segmented
-            x-class="segmented max-w-1200px mx-auto"
+            x-class="segmented max-w-1200px mx-auto font-bold"
             options={options}
             block
             shape="round"
