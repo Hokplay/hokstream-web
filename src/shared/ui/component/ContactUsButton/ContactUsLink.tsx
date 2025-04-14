@@ -1,7 +1,7 @@
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
 import { contactConfig } from '@/config/contactConfig.ts';
 
-function ContactUsButton({ ...props }) {
+function ContactUsLink({ ...props }) {
   const { t } = useTranslation();
 
   return (
@@ -22,4 +22,4 @@ function ContactUsButton({ ...props }) {
   );
 }
 
-export default ContactUsButton;
+export default ContactUsLink;

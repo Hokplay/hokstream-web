@@ -1,5 +1,5 @@
 import Tags from '@/ui/home/component/Tags/Tags.tsx';
-import ContactUsButton from '@/shared/ui/component/ContactUsButton/ContactUsButton.tsx';
+import ContactUsLink from '@/shared/ui/component/ContactUsButton/ContactUsLink.tsx';
 
 interface BannerProps {
   title: string;
@@ -13,7 +13,7 @@ function Banner({ title }: BannerProps) {
       <div x-class="md-order-2">
         <h1 x-class="my-0 text-45px md-text-60px lg-text-96px">{title}</h1>
         <Tags />
-        <ContactUsButton />
+        <ContactUsLink />
       </div>
       <div
         x-class="w-full aspect-628/644 overflow-hidden"

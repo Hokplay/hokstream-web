@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import I18nSelector from '@/i18n/component/I18nSelector/I18nSelector.tsx';
-import ContactUsButton from '@/shared/ui/component/ContactUsButton/ContactUsButton.tsx';
+import ContactUsLink from '@/shared/ui/component/ContactUsButton/ContactUsLink.tsx';
 import Menu from '@/shared/ui/layout/component/Menu/Menu.tsx';
 import HokStreamLogo from '@/shared/ui/layout/component/HokStreamLogo/HokStreamLogo.tsx';
 import BurgerMenu from '@/shared/ui/layout/component/BurgerMenu/BurgerMenu.tsx';
@@ -28,7 +28,7 @@ function Header() {
         <div uno-flex="~ items-center gap-20px">
           <Menu menuList={menuList} x-class="hidden lg-block" />
           <I18nSelector />
-          <ContactUsButton x-class="hidden lg-block" />
+          <ContactUsLink x-class="hidden lg-block" />
           <BurgerMenu menuList={burgerMenuList} x-class="block lg-hidden" />
         </div>
       </div>
