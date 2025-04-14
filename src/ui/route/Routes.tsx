@@ -6,13 +6,6 @@ import {
 
 import { RoutePath } from '@/ui/route/RoutePath.ts';
 import MainLayout from '@/shared/ui/layout/MainLayout.tsx';
-import HomeView from '@/ui/home/view/Home.view.tsx';
-import IntroductionView from '@/ui/introduction/view/Introduction.view.tsx';
-import SuccessCaseView from '@/ui/successCase/view/SuccessCase.view.tsx';
-import FeatureView from '@/ui/feature/view/Feature.view.tsx';
-import AboutUsView from '@/ui/aboutUs/view/AboutUs.view.tsx';
-import PrivacyPolicyView from '@/ui/privacyPolicy/view/PrivacyPolicy.view.tsx';
-import TermsOfUseView from '@/ui/termsOfUse/view/TermsOfUse.view.tsx';
 
 function Routes() {
   const router = createBrowserRouter([
@@ -21,31 +14,87 @@ function Routes() {
       children: [
         {
           path: RoutePath.Home,
-          element: <HomeView />
+          async lazy() {
+            const { default: HomeView } = await import(
+              '@/ui/home/view/Home.view.tsx'
+            );
+
+            return {
+              element: <HomeView />
+            };
+          }
         },
         {
           path: RoutePath.Intro,
-          element: <IntroductionView />
+          async lazy() {
+            const { default: IntroductionView } = await import(
+              '@/ui/introduction/view/Introduction.view.tsx'
+            );
+
+            return {
+              element: <IntroductionView />
+            };
+          }
         },
         {
           path: RoutePath.Cases,
-          element: <SuccessCaseView />
+          async lazy() {
+            const { default: SuccessCaseView } = await import(
+              '@/ui/successCase/view/SuccessCase.view.tsx'
+            );
+
+            return {
+              element: <SuccessCaseView />
+            };
+          }
         },
         {
           path: RoutePath.Features,
-          element: <FeatureView />
+          async lazy() {
+            const { default: FeatureView } = await import(
+              '@/ui/feature/view/Feature.view.tsx'
+            );
+
+            return {
+              element: <FeatureView />
+            };
+          }
         },
         {
           path: RoutePath.About,
-          element: <AboutUsView />
+          async lazy() {
+            const { default: AboutUsView } = await import(
+              '@/ui/aboutUs/view/AboutUs.view.tsx'
+            );
+
+            return {
+              element: <AboutUsView />
+            };
+          }
         },
         {
           path: RoutePath.PrivacyPolicy,
-          element: <PrivacyPolicyView />
+          async lazy() {
+            const { default: PrivacyPolicyView } = await import(
+              '@/ui/privacyPolicy/view/PrivacyPolicy.view.tsx'
+            );
+
+            return {
+              element: <PrivacyPolicyView />
+            };
+          }
         },
         {
           path: RoutePath.TermsOfUse,
-          element: <TermsOfUseView />
+          async lazy() {
+            const { default: TermsOfUseView } = await import(
+              '@/ui/termsOfUse/view/TermsOfUse.view.tsx'
+            );
+
+            return {
+              element: <TermsOfUseView />
+            };
+          }
         },
         {
           path: '*',
