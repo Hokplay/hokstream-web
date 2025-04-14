@@ -1,5 +1,6 @@
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
 import { contactConfig } from '@/config/contactConfig.ts';
+import Icon from '@/shared/ui/component/Icon/Icon.tsx';
 
 function ContactUsLink({ ...props }) {
   const { t } = useTranslation();
@@ -17,7 +18,10 @@ function ContactUsLink({ ...props }) {
       uno-p="x-20px y-4px"
       rel="noreferrer"
     >
-      {t('contact')}
+      <div uno-flex="~ items-center gap-8px">
+        <span> {t('contact')}</span>
+        <Icon name="TopRightArrow" />
+      </div>
     </a>
   );
 }
