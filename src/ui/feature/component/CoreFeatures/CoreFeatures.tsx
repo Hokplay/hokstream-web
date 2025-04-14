@@ -54,6 +54,7 @@ const CoreFeatures = () => {
             x-class="w-full"
             src="/images/features/broadcasting_interface.png"
             alt="Broadcasting interface"
+            loading="lazy"
           />
         </div>
 
@@ -63,6 +64,7 @@ const CoreFeatures = () => {
               <img
                 src="/images/features/start_animate.png"
                 alt="Online subtitles and animations"
+                loading="lazy"
               />
             </div>
             <div className="feature-content">
@@ -76,6 +78,7 @@ const CoreFeatures = () => {
               <img
                 src="/images/features/low_latency.png"
                 alt="Remote interaction"
+                loading="lazy"
               />
             </div>
             <div className="feature-content">
@@ -91,6 +94,7 @@ const CoreFeatures = () => {
               <img
                 src="/images/features/flow.png"
                 alt="Event process management"
+                loading="lazy"
               />
             </div>
             <div className="feature-content">
@@ -104,6 +108,7 @@ const CoreFeatures = () => {
               <img
                 src="/images/features/signals.png"
                 alt="Multi-location signal sources"
+                loading="lazy"
               />
             </div>
             <div className="feature-content">

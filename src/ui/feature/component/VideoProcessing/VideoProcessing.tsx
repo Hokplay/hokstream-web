@@ -42,6 +42,7 @@ function VideoProcessing() {
                 x-class="w-full h-full object-cover"
                 src="/images/features/v_understands.png"
                 alt="Video processing application"
+                loading="lazy"
               />
             </div>
             <div className="analysis-content">
@@ -56,6 +57,7 @@ function VideoProcessing() {
                 x-class="w-full h-full object-cover"
                 src="/images/features/video-processing-app.jpg"
                 alt="Game interface with data analysis"
+                loading="lazy"
               />
             </div>
             <div className="analysis-content">

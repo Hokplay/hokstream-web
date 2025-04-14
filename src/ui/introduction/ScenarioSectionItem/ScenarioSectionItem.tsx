@@ -47,6 +47,7 @@ function ScenarioSectionItem({
                     x-class="w-full h-full object-cover"
                     src={item.image}
                     alt=""
+                    loading="lazy"
                   />
                 </div>
               </div>

@@ -125,6 +125,7 @@ function TournamentSection() {
             x-class="w-full h-full object-cover"
             src="/images/caseStudy/CaseStudy_萬能科技大學現場.webp"
             alt="League of Legends Tournament Setup"
+            loading="lazy"
           />
         </div>
       </div>

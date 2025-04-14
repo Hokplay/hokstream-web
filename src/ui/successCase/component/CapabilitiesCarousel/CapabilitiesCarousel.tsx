@@ -20,6 +20,7 @@ function CapabilitiesCarousel() {
                 x-class="w-full h-full object-cover"
                 src={slider.image}
                 alt={slider.title}
+                loading="lazy"
               />
               <div
                 x-class="absolute h-full w-120px md-w-150px lg-w-200px lg-px-[10px_10px_10px_0] left-0 top-0 xl-py-20px bg-white/60 backdrop-blur-[20px]"

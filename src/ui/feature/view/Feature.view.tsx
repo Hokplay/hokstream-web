@@ -267,6 +267,7 @@ function FeatureView() {
               <img
                 src={images.broadcastSetup}
                 alt="Multi-scene live production"
+                loading="lazy"
               />
             </div>
             <div className="feature-text">
@@ -280,6 +281,7 @@ function FeatureView() {
               <img
                 src={images.videoProcessing}
                 alt="No learning threshold - Video Processing App"
+                loading="lazy"
               />
             </div>
             <div className="feature-text">
@@ -293,6 +295,7 @@ function FeatureView() {
               <img
                 src={images.gameCollage}
                 alt="Various game types supported"
+                loading="lazy"
               />
             </div>
             <div className="feature-text">
@@ -306,6 +309,7 @@ function FeatureView() {
               <img
                 src={images.decentralizedDesign}
                 alt="Various game types supported"
+                loading="lazy"
               />
             </div>
             <div className="feature-text">

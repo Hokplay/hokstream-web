@@ -6,7 +6,7 @@ function Partners() {
     <Marquee autoFill={true}>
       {imageList.map(image => (
         <div key={image.src}>
-          <img src={image.src} alt={image.alt} />
+          <img src={image.src} alt={image.alt} loading="lazy" />
         </div>
       ))}
     </Marquee>

@@ -113,6 +113,7 @@ function SuccessCaseView() {
                 src="/images/caseStudy/桃園電競節_1.webp"
                 alt="Event 1"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div>
@@ -120,6 +121,7 @@ function SuccessCaseView() {
                 src="/images/caseStudy/桃園電競節_2.webp"
                 alt="Event 2"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div>
@@ -127,6 +129,7 @@ function SuccessCaseView() {
                 src="/images/caseStudy/桃園電競節_3.webp"
                 alt="Event 3"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className="row-span-2">
@@ -134,6 +137,7 @@ function SuccessCaseView() {
                 src="/images/caseStudy/桃園電競節_4.webp"
                 alt="Event 4"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -149,6 +153,7 @@ function SuccessCaseView() {
               <img
                 src="/images/caseStudy/Schools_Logo/健行科大.png"
                 alt="Partner 1"
+                loading="lazy"
               />
               <span>健行科大</span>
             </div>
@@ -156,6 +161,7 @@ function SuccessCaseView() {
               <img
                 src="/images/caseStudy/Schools_Logo/樹德科大.png"
                 alt="Partner 2"
+                loading="lazy"
               />
               <span>樹德科大</span>
             </div>
@@ -163,6 +169,7 @@ function SuccessCaseView() {
               <img
                 src="/images/caseStudy/Schools_Logo/永平工商.png"
                 alt="Partner 3"
+                loading="lazy"
               />
               <span>永平工商</span>
             </div>
@@ -170,6 +177,7 @@ function SuccessCaseView() {
               <img
                 src="/images/caseStudy/Schools_Logo/萬能科大.png"
                 alt="Partner 4"
+                loading="lazy"
               />
               <span>萬能科大</span>
             </div>
@@ -177,6 +185,7 @@ function SuccessCaseView() {
               <img
                 src="/images/caseStudy/Schools_Logo/黎明科大.png"
                 alt="Partner 5"
+                loading="lazy"
               />
               <span>黎明科大</span>
             </div>
@@ -204,6 +213,7 @@ function SuccessCaseView() {
                     x-class="w-full h-full object-cover align-middle"
                     src="/images/caseStudy/thirdperson.png"
                     alt="Single-person tracking"
+                    loading="lazy"
                   />
                 </div>
                 <p
@@ -230,6 +240,7 @@ function SuccessCaseView() {
                     x-class="w-full h-full object-cover align-middle"
                     src="/images/caseStudy/secondperson.png"
                     alt="Two-person tracking"
+                    loading="lazy"
                   />
                 </div>
                 <p

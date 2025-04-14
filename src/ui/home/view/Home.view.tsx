@@ -25,11 +25,13 @@ function HomeView() {
                   x-if={locale === 'zh-TW'}
                   src="/images/home/ZH_traditional_brocasting.png"
                   alt="傳統製作流程"
+                  loading="lazy"
                 />
                 <img
                   x-if={locale === 'en-US'}
                   src="/images/home/EN_tradtional.png"
                   alt="傳統製作流程"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -44,11 +46,13 @@ function HomeView() {
                   x-if={locale === 'zh-TW'}
                   src="/images/home/ZH_social_broadcasting.png"
                   alt="社群製作流程"
+                  loading="lazy"
                 />
                 <img
                   x-if={locale === 'en-US'}
                   src="/images/home/EN_social.png"
                   alt="Community production"
+                  loading="lazy"
                 />
               </div>
             </div>
