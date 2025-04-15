@@ -13,11 +13,19 @@ function HowItWorks({ data }: HowItWorksProps) {
       <h2>{data.title}</h2>
 
       <div className="md-flex-row" uno-flex="~ col items-center gap-30px">
-        <div className="traditional bg-#ffffff">
-          <h3>{traditionalProduction.title}</h3>
-          <p>{traditionalProduction.description}</p>
-          <div className="flow-diagram">
+        <div x-class="flex-1">
+          <h3 x-class="p-[8px_16px] w-fit mx-auto bg-$Secondary text-#ffffff rounded-40px">
+            {traditionalProduction.title}
+          </h3>
+          <p
+            uno-text="$Accent"
+            x-class="px-25px font-bold mb-20px lg-text-20px"
+          >
+            {traditionalProduction.description}
+          </p>
+          <div className="mx-auto bg-#ffffff rounded-40px shadow-[2px_4px_4px_0_rgba(0,0,0,0.25)]">
             <img
+              x-class="w-full max-w-320px"
               src={traditionalProduction.image}
               alt={traditionalProduction.title}
             />
@@ -26,11 +34,16 @@ function HowItWorks({ data }: HowItWorksProps) {
 
         <div className="vs">VS</div>
 
-        <div className="social bg-#ffffff">
-          <h3>{communityProduction.title}</h3>
-          <p>{communityProduction.description}</p>
-          <div className="flow-diagram">
+        <div x-class="flex-1">
+          <h3 x-class="p-[8px_16px] w-fit mx-auto bg-$Secondary text-#ffffff rounded-40px">
+            {communityProduction.title}
+          </h3>
+          <p uno-text="$Accent 20px" x-class="px-25px font-bold mb-20px">
+            {communityProduction.description}
+          </p>
+          <div className="mx-auto bg-#ffffff rounded-40px shadow-[2px_4px_4px_0_rgba(0,0,0,0.25)]">
             <img
+              x-class="w-full max-w-320px"
               src={communityProduction.image}
               alt={communityProduction.title}
             />
