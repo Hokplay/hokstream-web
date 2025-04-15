@@ -18,14 +18,14 @@ function HowItWorks({ data }: HowItWorksProps) {
             {traditionalProduction.title}
           </h3>
           <p
-            uno-text="$Accent"
+            uno-text="$Accent 20px"
             x-class="px-25px font-bold mb-20px lg-text-20px"
           >
             {traditionalProduction.description}
           </p>
-          <div className="mx-auto bg-#ffffff rounded-40px shadow-[2px_4px_4px_0_rgba(0,0,0,0.25)]">
+          <div className="aspect-1/1 mx-auto bg-#ffffff rounded-40px shadow-[2px_4px_4px_0_rgba(0,0,0,0.25)]">
             <img
-              x-class="w-full max-w-320px"
+              x-class="w-full h-full object-contain max-w-320px"
               src={traditionalProduction.image}
               alt={traditionalProduction.title}
             />
@@ -41,9 +41,9 @@ function HowItWorks({ data }: HowItWorksProps) {
           <p uno-text="$Accent 20px" x-class="px-25px font-bold mb-20px">
             {communityProduction.description}
           </p>
-          <div className="mx-auto bg-#ffffff rounded-40px shadow-[2px_4px_4px_0_rgba(0,0,0,0.25)]">
+          <div className="aspect-1/1 mx-auto bg-#ffffff rounded-40px shadow-[2px_4px_4px_0_rgba(0,0,0,0.25)]">
             <img
-              x-class="w-full max-w-320px"
+              x-class="w-full h-full object-contain max-w-320px"
               src={communityProduction.image}
               alt={communityProduction.title}
             />
