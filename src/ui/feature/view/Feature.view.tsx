@@ -3,6 +3,7 @@ import FeatureCards from '@/ui/feature/component/FeatureCards/FeatureCards.tsx';
 import CoreFeatures from '@/ui/feature/component/CoreFeatures/CoreFeatures.tsx';
 import VideoProcessing from '@/ui/feature/component/VideoProcessing/VideoProcessing.tsx';
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
+import Banner from '@/ui/feature/component/Banner/Banner.tsx';
 
 import './Features.scss';
 
@@ -159,16 +160,9 @@ function FeatureView() {
 
   return (
     <div className="features-page">
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="container">
-          <h1 className="hero-title">{t.ourStrengths}</h1>
-          <div className="hero-image">
-            <img src={images.heroImage} alt="Digital faces collage" />
-          </div>
-        </div>
+      <section x-class="max-w-1200px mx-auto">
+        <Banner title={t.ourStrengths} image={images.heroImage} />
       </section>
-
       {/* Product Highlights */}
       <section className="product-highlights">
         <div className="container">
