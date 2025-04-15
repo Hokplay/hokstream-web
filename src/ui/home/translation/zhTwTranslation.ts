@@ -1,9 +1,9 @@
 import type { HomeTranslation } from './HomeTranslation.ts';
 
 export const zhTwTranslation: HomeTranslation = {
-  banner: {
+  bannerSection: {
     title: 'SPORTSMESH',
-    image: '/images/home/Landing_Hero_Image.pn',
+    image: '/images/home/Landing_Hero_Image.png',
     tags: [
       { label: '串流媒體' },
       { label: 'AI 輔助' },
@@ -17,20 +17,18 @@ export const zhTwTranslation: HomeTranslation = {
   },
   howSportsmeshWorksSection: {
     title: 'SPORTSMESH 如何運作?',
-    productions: [
-      {
-        type: '傳統製作',
-        description: '向傳訊，額外從觀影平台取得素材，浪費無謂的時間',
-        image: '/images/home/ZH_traditional_brocasting.png'
-      },
-      {
-        type: '社群製作',
-        description: '多向傳訊製作素材，不被距離影響，達到去中心化效果',
-        image: '/images/home/ZH_social_broadcasting.png'
-      }
-    ]
+    traditionalProduction: {
+      title: '傳統製作',
+      description: '向傳訊，額外從觀影平台取得素材，浪費無謂的時間',
+      image: '/images/home/ZH_traditional_brocasting.png'
+    },
+    communityProduction: {
+      title: '社群製作',
+      description: '多向傳訊製作素材，不被距離影響，達到去中心化效果',
+      image: '/images/home/ZH_social_broadcasting.png'
+    }
   },
-  partners: [
+  partnersSection: [
     { logoUrl: '/images/home/ACER.png', name: 'ACER' },
     { logoUrl: '/images/home/ADATA.png', name: 'ADATA' },
     { logoUrl: '/images/home/Arena_of_Valor.png', name: 'Arena of Valor' },

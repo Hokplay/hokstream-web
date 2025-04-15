@@ -1,31 +1,32 @@
 export interface HomeTranslation {
-  banner: BannerData;
+  bannerSection: BannerSection;
   howSportsmeshWorksSection: HowItWorksSection;
-  partners: PartnerInfo[];
+  partnersSection: Partner[];
 }
 
-export interface BannerTag {
-  label: string;
-}
-
-export interface BannerData {
+export interface BannerSection {
   title: string;
   image: string;
-  tags: BannerTag[];
-}
-
-export interface ProductionInfo {
-  type: string;
-  description: string;
-  image: string;
+  tags: Tag[];
 }
 
 export interface HowItWorksSection {
   title: string;
-  productions: ProductionInfo[];
+  traditionalProduction: Production;
+  communityProduction: Production;
 }
 
-export interface PartnerInfo {
+export interface Tag {
+  label: string;
+}
+
+export interface Production {
+  title: string;
+  description: string;
+  image: string;
+}
+
+export interface Partner {
   logoUrl: string;
   name: string;
 }

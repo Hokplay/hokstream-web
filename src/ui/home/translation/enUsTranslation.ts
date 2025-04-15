@@ -1,9 +1,9 @@
 import type { HomeTranslation } from './HomeTranslation.ts';
 
 export const enUsTranslation: HomeTranslation = {
-  banner: {
+  bannerSection: {
     title: 'SPORTSMESH',
-    image: '/images/home/Landing_Hero_Image.pn',
+    image: '/images/home/Landing_Hero_Image.png',
     tags: [
       { label: 'Streaming' },
       { label: 'AI Assist' },
@@ -17,22 +17,20 @@ export const enUsTranslation: HomeTranslation = {
   },
   howSportsmeshWorksSection: {
     title: 'How does SPORTSMESH work?',
-    productions: [
-      {
-        type: 'Traditional production',
-        description:
-          'One-way communication, additional material is obtained from the viewing platform, wasting unnecessary time',
-        image: '/images/home/EN_tradtional.png'
-      },
-      {
-        type: 'Community production',
-        description:
-          'Multi-directional communication production materials are not affected by distance and achieve a decentralized effect.',
-        image: '/images/home/EN_social.png'
-      }
-    ]
+    traditionalProduction: {
+      title: 'Traditional production',
+      description:
+        'One-way communication, additional material is obtained from the viewing platform, wasting unnecessary time',
+      image: '/images/home/EN_tradtional.png'
+    },
+    communityProduction: {
+      title: 'Community production',
+      description:
+        'Multi-directional communication production materials are not affected by distance and achieve a decentralized effect.',
+      image: '/images/home/EN_social.png'
+    }
   },
-  partners: [
+  partnersSection: [
     { logoUrl: '/images/home/ACER.png', name: 'ACER' },
     { logoUrl: '/images/home/ADATA.png', name: 'ADATA' },
     { logoUrl: '/images/home/Arena_of_Valor.png', name: 'Arena of Valor' },
