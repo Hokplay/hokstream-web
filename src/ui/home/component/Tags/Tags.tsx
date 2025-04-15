@@ -1,29 +1,20 @@
-import { useTranslation } from '@/i18n/hook/useTranslation.ts';
+import type { Tag } from '@/ui/home/translation/HomeTranslation.ts';
 
-const tagKeyList = [
-  'streaming',
-  'aiAssist',
-  'sports',
-  'community',
-  'decentralized',
-  'media',
-  'videoEditing',
-  'messProduction'
-];
+interface TagsProps {
+  data: Tag[];
+}
 
-function Tags() {
-  const { t } = useTranslation();
-
+function Tags({ data }: TagsProps) {
   return (
     <div uno-flex="~ gap-5px wrap" x-class="py-20px">
-      {tagKeyList.map(tagKey => (
+      {data.map(tag => (
         <span
-          key={tagKey}
+          key={tag.label}
           uno-border="1px solid #595DA7 rounded-20px"
           uno-text="12px #595DA7"
           x-class="leading-17px px-4px py-2px truncate"
         >
-          {t(`tag.${tagKey}`)}
+          {tag.label}
         </span>
       ))}
     </div>

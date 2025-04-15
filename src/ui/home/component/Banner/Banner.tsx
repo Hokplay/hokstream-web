@@ -14,7 +14,7 @@ function Banner({ data }: BannerProps) {
     >
       <div x-class="md-order-2">
         <h1 x-class="my-0 text-45px md-text-60px lg-text-96px">{data.title}</h1>
-        <Tags />
+        <Tags data={data.tags} />
         <ContactUsLink />
       </div>
       <div
