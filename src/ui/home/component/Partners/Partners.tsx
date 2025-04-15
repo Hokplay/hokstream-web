@@ -1,12 +1,20 @@
-import { imageList } from '@/ui/home/imageList.ts';
 import Marquee from '@/shared/ui/component/Marquee/Marquee.tsx';
+import type { Partner } from '@/ui/home/translation/HomeTranslation.ts';
 
-function Partners() {
+interface PartnersProps {
+  data: Partner[];
+}
+
+function Partners({ data }: PartnersProps) {
   return (
     <Marquee autoFill={true}>
-      {imageList.map(image => (
-        <div key={image.src}>
-          <img src={image.src} alt={image.alt} />
+      {data.map(image => (
+        <div key={image.name} x-class="w-144px h-107px">
+          <img
+            x-class="w-full h-full object-contain"
+            src={image.logoUrl}
+            alt={image.name}
+          />
         </div>
       ))}
     </Marquee>
