@@ -9,8 +9,12 @@ function Partners({ data }: PartnersProps) {
   return (
     <Marquee autoFill={true}>
       {data.map(image => (
-        <div key={image.name}>
-          <img src={image.logoUrl} alt={image.name} />
+        <div key={image.name} x-class="w-144px h-107px">
+          <img
+            x-class="w-full h-full object-contain"
+            src={image.logoUrl}
+            alt={image.name}
+          />
         </div>
       ))}
     </Marquee>
