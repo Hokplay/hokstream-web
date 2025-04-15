@@ -19,7 +19,7 @@ export const zhTwTranslation: HomeTranslation = {
     title: 'SPORTSMESH 如何運作?',
     traditionalProduction: {
       title: '傳統製作',
-      description: '向傳訊，額外從觀影平台取得素材，浪費無謂的時間',
+      description: '單向傳訊，額外從觀影平台取得素材，浪費無謂的時間',
       image: '/images/home/ZH_traditional_brocasting.png'
     },
     communityProduction: {
