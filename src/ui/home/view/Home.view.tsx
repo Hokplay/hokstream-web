@@ -4,8 +4,6 @@ import Banner from '@/ui/home/component/Banner/Banner.tsx';
 import { translations } from '@/ui/home/translation/translations.ts';
 import HowItWorks from '@/ui/home/component/HowItWorks/HowItWorks.tsx';
 
-import './Home.scss';
-
 function HomeView() {
   const { locale } = useTranslation();
   const { bannerSection, howSportsmeshWorksSection, partnersSection } =
@@ -13,7 +11,7 @@ function HomeView() {
 
   return (
     <>
-      <div className="intro-page px-20px xl-px-0 max-w-1200px mx-auto">
+      <div className="px-20px xl-px-0 max-w-1200px mx-auto">
         <Banner data={bannerSection} />
         <HowItWorks data={howSportsmeshWorksSection} />
       </div>
