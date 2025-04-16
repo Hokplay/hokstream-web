@@ -20,7 +20,7 @@
 .core-features-section .container {
   position: relative;
   z-index: 1;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -54,47 +54,14 @@
 
 .feature-card {
   background-color: white;
-  border-radius: 8px;
-  overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.feature-image {
-  position: relative;
-  overflow: hidden;
-  height: 180px;
-}
-
-.feature-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.feature-content {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.feature-title {
-  background-color: #ff7b5a;
-  color: white;
-  padding: 12px 15px;
-  font-size: 1rem;
-  text-align: center;
-}
-
 .feature-description {
-  padding: 15px;
-  font-size: 0.85rem;
-  color: #666;
   line-height: 1.5;
-  flex-grow: 1;
-  background-color: #f9f9f9;
 }
 
 /* Responsive adjustments */
@@ -113,9 +80,5 @@
   .module-badge span {
     font-size: 0.9rem;
     padding: 8px 16px;
-  }
-
-  .feature-image {
-    height: 160px;
   }
 }
