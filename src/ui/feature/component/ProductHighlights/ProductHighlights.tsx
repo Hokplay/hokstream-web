@@ -10,15 +10,19 @@ function ProductHighlights({ data }: ProductHighlightsProps) {
   return (
     <section className="product-highlights">
       <div className="container">
-        <h2 className="section-title">{data.title}</h2>
-        <div className="highlights-grid">
+        <h2 uno-text="$Secondary 32px" className="lg-36px">
+          {data.title}
+        </h2>
+        <div className="" uno-flex="~ justify-center wrap">
           {data.highlights.map(item => (
-            <div className="highlight-item" key={item.title}>
-              <div className="highlight-icon">
-                <img src={item.icon} alt={item.title} />
-              </div>
-              <div className="highlight-content">
-                <h3>{item.title}</h3>
+            <div
+              key={item.title}
+              uno-flex="~ col items-center"
+              x-class="p-10px lg-flex-row gap-15px w-50% lg-w-30% lg-flex-items-start"
+            >
+              <img src={item.icon} alt={item.title} x-class="w-80px h-80px" />
+              <div className="highlight-content text-center lg-text-left">
+                <h3 x-class="text-$Primary">{item.title}</h3>
                 <p>{item.description}</p>
               </div>
             </div>

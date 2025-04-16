@@ -59,7 +59,7 @@ export const enUsTranslation: FeaturesPageTranslation = {
             'Creators can edit title cards in real time, with unified designs set by event designers to perfectly match broadcast requirements'
         },
         {
-          image: '/images/features/low_latency.png"',
+          image: '/images/features/low_latency.png',
           title: 'Low-Latency Multi-Source Interaction Across Locations',
           description:
             'All signals have a latency of less than 0.5 seconds, supporting up to 18 sources at 60 FPS'
@@ -127,6 +127,7 @@ export const enUsTranslation: FeaturesPageTranslation = {
       title: 'All of these can help...',
       tabs: [
         {
+          id: 'gamer',
           name: 'Game Company',
           items: [
             {
@@ -151,6 +152,7 @@ export const enUsTranslation: FeaturesPageTranslation = {
           ]
         },
         {
+          id: 'creator',
           name: 'Creator',
           items: [
             {
@@ -176,6 +178,7 @@ export const enUsTranslation: FeaturesPageTranslation = {
           ]
         },
         {
+          id: 'venue',
           name: 'Venue',
           items: [
             {
