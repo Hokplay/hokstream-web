@@ -1,9 +1,12 @@
+import type { BannerSection } from '@/ui/feature/translation/FeaturesPageTranslation.ts';
+
 interface BannerProps {
-  title: string;
-  image: string;
+  data: BannerSection;
 }
 
-function Banner({ title, image }: BannerProps) {
+function Banner({ data }: BannerProps) {
+  const { title, image } = data;
+
   return (
     <div
       x-class={`relative lg-block h-85vh lg-h-auto lg-pt-60px overflow-hidden items-center`}
