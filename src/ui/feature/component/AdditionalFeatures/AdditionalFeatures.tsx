@@ -32,7 +32,7 @@ function AdditionalFeatures({ data }: AdditionalFeaturesProps) {
               <h2 x-class="mb-10px md-mt-0 lg-text-36px" uno-text="$Primary">
                 {item.title}
               </h2>
-              <p x-class="lg-text-24px">{item.description}</p>
+              <p x-class="lg-text-24px leading-normal">{item.description}</p>
             </div>
           </Col>
         </Row>
