@@ -101,7 +101,7 @@ export const zhTwTranslation: FeaturesPageTranslation = {
             '支援 8~16 路來自多地不同訊源,包含遊戲畫面、視訊鏡頭、手機前後鏡頭、攝影機...等。並透過獨特低延遲傳輸技術,獲得各地訊源進行製作。製作者亦可透過遠端操作方式進行即時轉播。'
         },
         {
-          title: '無學習門欄',
+          title: '無學習門檻',
           image: '/images/features/working.png',
           description:
             '所以參賽者不用安裝 OBS、VMIX 等軟體，不用學會如何傳輸訊號，僅需要使用瀏覽器打開連結即可參與'
@@ -132,7 +132,7 @@ export const zhTwTranslation: FeaturesPageTranslation = {
               description: '更多社群自製的對抗内容'
             },
             {
-              title: '無學習門欄',
+              title: '無學習門檻',
               description: '更多跨社群對抗内容、線上節目製作成本下降'
             },
             {
@@ -155,7 +155,7 @@ export const zhTwTranslation: FeaturesPageTranslation = {
               description: '降低社群賽事製作成本、減少設備&人力物流成本'
             },
             {
-              title: '無學習門欄',
+              title: '無學習門檻',
               description: '線上節目製作難易度下降、内容彈性增加、溝通成本下降'
             },
             {
@@ -178,7 +178,7 @@ export const zhTwTranslation: FeaturesPageTranslation = {
               description: '自行製作店内比賽&轉播、網咖間賽事、垮地公司盃...等'
             },
             {
-              title: '無學習門欄',
+              title: '無學習門檻',
               description: '輕鬆獲取場域内外所有需要畫面'
             },
             {
