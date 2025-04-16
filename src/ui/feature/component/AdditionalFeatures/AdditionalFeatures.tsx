@@ -9,19 +9,17 @@ interface AdditionalFeaturesProps {
 function AdditionalFeatures({ data }: AdditionalFeaturesProps) {
   return (
     <section className="additional-features">
-      <div className="container">
-        {data.articles.map(item => (
-          <div className="feature-item" key={item.title}>
-            <div className="feature-image">
-              <img src={item.image} alt={item.title} />
-            </div>
-            <div className="feature-text">
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-            </div>
+      {data.articles.map(item => (
+        <div className="feature-item" key={item.title}>
+          <div className="feature-image">
+            <img src={item.image} alt={item.title} />
           </div>
-        ))}
-      </div>
+          <div className="feature-text">
+            <h2 uno-text="$Primary">{item.title}</h2>
+            <p x-class="lg-24px">{item.description}</p>
+          </div>
+        </div>
+      ))}
     </section>
   );
 }

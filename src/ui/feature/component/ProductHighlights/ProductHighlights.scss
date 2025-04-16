@@ -8,13 +8,6 @@
   font-size: 1.3rem;
   margin-bottom: 25px;
   font-weight: 600;
-  color: #333;
-}
-
-.highlights-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
 }
 
 .highlight-item {
@@ -39,141 +32,20 @@
 }
 
 .highlight-content h3 {
-  font-size: 0.95rem;
   margin: 0 0 6px;
   font-weight: 600;
-  color: #333;
 }
 
 .highlight-content p {
-  font-size: 0.8rem;
   color: #666;
   line-height: 1.4;
   margin: 0;
 }
 
-/* Core Features */
-.core-features {
-  padding: 40px 0;
-}
-
-.feature-block {
-  margin-bottom: 40px;
-}
-
-.feature-badge {
-  display: inline-block;
-  padding: 8px 15px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.dark-badge {
-  background-color: #333;
-  color: white;
-}
-
-.feature-showcase {
-  border-radius: 10px;
-  padding: 30px;
+.container {
   position: relative;
-}
-
-.coral-bg {
-  background-color: #ff8a65;
-  background: linear-gradient(135deg, #ff8a65 0%, #ff7043 100%);
-}
-
-.main-feature-image {
-  width: 100%;
-  margin-bottom: 25px;
-  position: relative;
-}
-
-.main-feature-image img {
-  width: 100%;
-  border-radius: 8px;
-  display: block;
-}
-
-.feature-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-}
-
-.feature-card {
-  background-color: white;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.feature-card img {
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.feature-card h3 {
-  font-size: 0.9rem;
-  margin: 0 0 8px;
-  font-weight: 600;
-  color: #333;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.feature-card p {
-  font-size: 0.8rem;
-  color: #666;
-  line-height: 1.4;
-  margin: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.feature-tool-section {
-  border-radius: 10px;
-  padding: 30px;
-}
-
-.gaming-tools-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.tool-col {
-  position: relative;
-}
-
-.tool-col img {
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-  display: block;
-}
-
-.tool-description {
-  background-color: white;
-  padding: 15px;
-  border-radius: 0 0 8px 8px;
-}
-
-.tool-description h3 {
-  font-size: 1.1rem;
-  margin: 0 0 10px;
-  font-weight: 600;
-}
-
-.tool-description p {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.4;
-  margin: 0;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

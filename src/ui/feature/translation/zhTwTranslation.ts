@@ -57,7 +57,7 @@ export const zhTwTranslation: FeaturesPageTranslation = {
             '製作者可即時進行字卡修改，透過賽事設計者統一設計，確保完美符合轉需求'
         },
         {
-          image: '/images/features/low_latency.png"',
+          image: '/images/features/low_latency.png',
           title: '異地低延遲多訊源互動',
           description: '所有訊號延遲都低於 0.5 秒內，支援最多 18 路訊號，60FPS'
         },
@@ -158,7 +158,8 @@ export const zhTwTranslation: FeaturesPageTranslation = {
             },
             {
               title: '不限遊戲屬性',
-              description: '擴充業務内容，以往不易製作的SLG國戰轉播可以輕鬆完成'
+              description:
+                '擴充業務内容，以往不易製作的 SLG 國戰轉播可以輕鬆完成'
             },
             {
               title: '去中心化設計',

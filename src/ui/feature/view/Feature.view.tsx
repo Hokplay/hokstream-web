@@ -15,15 +15,15 @@ function FeatureView() {
 
   return (
     <div className="features-page">
-      <section x-class="max-w-1200px mx-auto">
+      <section x-class="max-w-1280px mx-auto">
         <Banner data={content.bannerSection} />
         <ProductHighlights data={content.productHighlightsSection} />
       </section>
-      <CoreFeatures />
+      <CoreFeatures data={content.coreFeatureSection.multiLocationSection} />
       <VideoProcessing
         data={content.coreFeatureSection.sportsBehaviorSection}
       />
-      <div x-class="max-w-1200px mx-auto">
+      <div x-class="px-16px xl-px-0 max-w-1280px mx-auto">
         <AdditionalFeatures data={content.coreFeatureSection.articleSection} />
         <FeatureCards data={content.coreFeatureSection.canHelpSection} />
       </div>
