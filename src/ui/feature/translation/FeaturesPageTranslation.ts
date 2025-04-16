@@ -11,7 +11,7 @@ export type BannerSection = {
 
 export type ProductHighlightsSection = {
   title: string;
-  highlights: HighlightItem[];
+  highlights: ProductHighlight[];
 };
 
 export type ArticleSection = {
@@ -27,10 +27,7 @@ export type CoreFeatureSection = {
   };
   sportsBehaviorSection: SportsBehaviorSection;
   articleSection: ArticleSection;
-  canHelpSection: {
-    title: string;
-    tabs: CanHelpTab[];
-  };
+  canHelpSection: CanHelpSection;
 };
 
 export type SportsBehaviorSection = {
@@ -38,7 +35,12 @@ export type SportsBehaviorSection = {
   items: SportsBehaviorItem[];
 };
 
-type HighlightItem = {
+export type CanHelpSection = {
+  title: string;
+  tabs: CanHelpTab[];
+};
+
+type ProductHighlight = {
   icon: string;
   title: string;
   description: string;

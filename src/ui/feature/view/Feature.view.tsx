@@ -25,7 +25,7 @@ function FeatureView() {
       />
       <div x-class="max-w-1200px mx-auto">
         <AdditionalFeatures data={content.coreFeatureSection.articleSection} />
-        <FeatureCards />
+        <FeatureCards data={content.coreFeatureSection.canHelpSection} />
       </div>
     </div>
   );
