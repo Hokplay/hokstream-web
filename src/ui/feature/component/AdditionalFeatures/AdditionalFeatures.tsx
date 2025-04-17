@@ -2,15 +2,13 @@ import type { ArticleSection } from '@/ui/feature/translation/FeaturesPageTransl
 import Row from '@/shared/ui/component/Row/Row.tsx';
 import Col from '@/shared/ui/component/Col/Col.tsx';
 
-import './AdditionalFeatures.scss';
-
 interface AdditionalFeaturesProps {
   data: ArticleSection;
 }
 
 function AdditionalFeatures({ data }: AdditionalFeaturesProps) {
   return (
-    <section className="additional-features">
+    <section className="py-40px">
       {data.articles.map(item => (
         <Row
           key={item.title}

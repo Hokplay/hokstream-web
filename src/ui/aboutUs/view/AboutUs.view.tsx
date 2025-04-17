@@ -12,7 +12,7 @@ function AboutUsView() {
   const content = translations[locale];
 
   return (
-    <div className="about-us-page">
+    <div>
       <Banner title={content.bannerSection.title} />
       <AboutUs data={content.aboutUsSection} />
       <TeamMember data={content.teamMemberSection} />
