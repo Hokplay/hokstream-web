@@ -30,7 +30,7 @@ function ScenariosSection({ data }: ScenarioSectionProps) {
       <Affix offsetTop={80}>
         <div x-class="py-3px bg-$Accent">
           <Segmented
-            x-class="segmented max-w-1200px mx-auto font-bold"
+            x-class="segmented max-w-1280px mx-auto font-bold"
             options={options}
             block
             shape="round"
@@ -38,7 +38,7 @@ function ScenariosSection({ data }: ScenarioSectionProps) {
           />
         </div>
       </Affix>
-      <div x-class="px-16px xl-px-0 max-w-1200px mx-auto">
+      <div x-class="px-16px xl-px-0 max-w-1280px mx-auto">
         {data.map(section => (
           <ScenarioItem
             key={section.id}
