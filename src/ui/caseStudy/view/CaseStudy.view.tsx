@@ -13,15 +13,17 @@ function CaseStudyView() {
   const content = translations[locale];
 
   return (
-    <div x-class="px-16px xl-px-0 max-w-1280px mx-auto">
+    <>
       <Banner data={content.bannerSection} />
-      <ProductionStats data={content.productionStatsSection} />
-      <TournamentSection data={content.tournamentSection} />
-      <CapabilitiesCarousel data={content.tournamentSection.carouselItems} />
-      <EventsGallery data={content.eventsGallerySection} />
-      <Partners data={content.partnersSection} />
-      <GrassrootsSports data={content.grassrootsSection} />
-    </div>
+      <div x-class="px-16px xl-px-0 max-w-1280px mx-auto">
+        <ProductionStats data={content.productionStatsSection} />
+        <TournamentSection data={content.tournamentSection} />
+        <CapabilitiesCarousel data={content.tournamentSection.carouselItems} />
+        <EventsGallery data={content.eventsGallerySection} />
+        <Partners data={content.partnersSection} />
+        <GrassrootsSports data={content.grassrootsSection} />
+      </div>
+    </>
   );
 }
 
