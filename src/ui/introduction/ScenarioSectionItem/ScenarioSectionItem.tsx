@@ -1,32 +1,35 @@
 import { useRef, useState } from 'react';
 import Slider from '@/shared/ui/component/Slider/Slider.tsx';
-import { carouselSettings } from '@/ui/introduction/ScenarioItem/carouselSettings.ts';
+import { carouselSettings } from '@/ui/introduction/ScenarioSectionItem/carouselSettings.ts';
 import Tag from '@/shared/ui/component/Tag/Tag.tsx';
 import Icon from '@/shared/ui/component/Icon/Icon.tsx';
 import Button from '@/shared/ui/component/Button/Button.tsx';
-import type { ScenarioItem } from '@/ui/introduction/translation/IntroductionPageTranslation.ts';
+import type { ScenarioSection } from '@/ui/introduction/translations/Scenarios.ts';
 
 type ScenarioSectionItemProps = {
-  data: ScenarioItem;
-  sectionRef: (element: HTMLDivElement | null) => void;
+  section: ScenarioSection;
+  sectionRef: (el: HTMLDivElement | null) => void;
 };
 
-function ScenarioItem({ data, sectionRef }: ScenarioSectionItemProps) {
+function ScenarioSectionItem({
+  section,
+  sectionRef
+}: ScenarioSectionItemProps) {
   const sliderRef = useRef<Slider | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const isFirstSlide = currentSlide === 0;
-  const isLastSlide = currentSlide === data.carouselItems.length - 1;
+  const isLastSlide = currentSlide === section.carouselItems.length - 1;
 
   return (
-    <section id={data.id} ref={sectionRef} x-class="p-[125px_0_20px_0]">
+    <section x-class="p-[125px_0_20px_0]" id={section.id} ref={sectionRef}>
       <h2 x-class="my-0" uno-text="$Primary 36px">
-        {data.title}
+        {section.title}
       </h2>
       <p x-class="my-5px" uno-text="$Text 20px">
-        {data.introduction}
+        {section.introduction}
       </p>
       <div x-class="mb-20px" uno-flex="~ gap-5px">
-        {data.tags.map(tag => (
+        {section.tags.map(tag => (
           <Tag label={tag} key={tag} />
         ))}
       </div>
@@ -37,7 +40,7 @@ function ScenarioItem({ data, sectionRef }: ScenarioSectionItemProps) {
             {...carouselSettings}
             beforeChange={(_, newIndex) => setCurrentSlide(newIndex)}
           >
-            {data.carouselItems.map((item, index) => (
+            {section.carouselItems.map((item, index) => (
               <div key={index} x-class="overflow-hidden">
                 <div x-class="aspect-16/9 overflow-hidden">
                   <img
@@ -52,9 +55,9 @@ function ScenarioItem({ data, sectionRef }: ScenarioSectionItemProps) {
         </div>
         <div>
           <h3 uno-text="20px" x-class="xl-text-24px">
-            {data.scenario.title}
+            {section.scenario.title}
           </h3>
-          <p uno-text="$Text 20px">{data.scenario.description}</p>
+          <p uno-text="$Text 20px">{section.scenario.description}</p>
           <div uno-flex="~ justify-between">
             <button
               x-class="w-140px bg-#ffffff hover:bg-$Primary-Light leading-28px hover:text-$Secondary duration-500 cursor-pointer"
@@ -62,7 +65,7 @@ function ScenarioItem({ data, sectionRef }: ScenarioSectionItemProps) {
               uno-text="$Primary"
               uno-flex="~ items-center justify-center gap-5px"
             >
-              <span>{data.moreInfo.label}</span>
+              <span>{section.moreInfo.label}</span>
               <Icon name="ThinRightArrow" />
             </button>
             <div x-class="flex items-center justify-center gap-10px">
@@ -78,7 +81,7 @@ function ScenarioItem({ data, sectionRef }: ScenarioSectionItemProps) {
                 />
               </Button>
               <div x-class="flex gap-5px">
-                {data.carouselItems.map((_, index) => (
+                {section.carouselItems.map((_, index) => (
                   <div
                     key={index}
                     x-class={[
@@ -107,4 +110,4 @@ function ScenarioItem({ data, sectionRef }: ScenarioSectionItemProps) {
   );
 }
 
-export default ScenarioItem;
+export default ScenarioSectionItem;
