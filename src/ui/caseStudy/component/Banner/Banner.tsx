@@ -25,7 +25,7 @@ function Banner({ data }: BannerProps) {
         {title}
       </h1>
       <div x-class="hidden lg-block h-full lg-h-auto max-w-845px mx-auto aspect-845/644 rounded-20px overflow-hidden">
-        <img x-class="w-full h-full" src={image} alt={title} />
+        <img x-class="w-full h-full object-cover" src={image} alt={title} />
       </div>
     </section>
   );
