@@ -39,12 +39,12 @@ function Routes() {
         {
           path: RoutePath.Cases,
           async lazy() {
-            const { default: SuccessCaseView } = await import(
-              '@/ui/successCase/view/SuccessCase.view.tsx'
+            const { default: CaseStudyView } = await import(
+              '@/ui/caseStudy/view/CaseStudy.view.tsx'
             );
 
             return {
-              element: <SuccessCaseView />
+              element: <CaseStudyView />
             };
           }
         },

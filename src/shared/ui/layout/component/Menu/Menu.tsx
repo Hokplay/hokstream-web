@@ -23,9 +23,7 @@ function Menu({ menuList, ...props }: MenuProps) {
           x-class={[
             'menu-item',
             'cursor-pointer',
-            {
-              highlight: location.pathname === menu.to
-            }
+            { highlight: location.pathname === menu.to }
           ]}
         >
           {menu.label}
