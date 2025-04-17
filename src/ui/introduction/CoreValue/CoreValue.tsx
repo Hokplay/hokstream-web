@@ -1,26 +1,27 @@
-import { data } from './data.ts';
-import { useTranslation } from '@/i18n/hook/useTranslation.ts';
+import type { CoreValueSection } from '@/ui/introduction/translation/IntroductionPageTranslation.ts';
 import Row from '@/shared/ui/component/Row/Row.tsx';
 import Col from '@/shared/ui/component/Col/Col.tsx';
 
-function CoreValue() {
-  const { locale } = useTranslation();
+interface CoreValueProps {
+  data: CoreValueSection;
+}
 
+function CoreValue({ data }: CoreValueProps) {
   return (
     <section>
-      <h2 uno-text="36px">{data.title[locale]}</h2>
+      <h2 uno-text="36px">{data.title}</h2>
       <Row gutter={[24, 16]}>
-        {data.itemList.map(item => (
-          <Col key={item.id} md={12} lg={8}>
+        {data.items.map(item => (
+          <Col key={item.title} xs={24} md={12} lg={8}>
             <div>
               <div
-                x-class="w-full aspect-410/280 overflow-hidden"
+                x-class="aspect-410/280 overflow-hidden"
                 uno-border="rounded-20px"
               >
                 <img
-                  x-class="w-full h-full"
+                  x-class="w-full h-full object-cover"
                   src={item.image}
-                  alt={item.description[locale]}
+                  alt={item.title}
                 />
               </div>
               <p
@@ -28,7 +29,7 @@ function CoreValue() {
                 uno-text="$Primary 20px center"
                 uno-font="bold"
               >
-                {item.description[locale]}
+                {item.title}
               </p>
             </div>
           </Col>
