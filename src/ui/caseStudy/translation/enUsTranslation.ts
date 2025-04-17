@@ -133,7 +133,7 @@ export const enUsTranslation: CaseStudyTranslation = {
       image: '/images/caseStudy/thirdperson.png'
     },
     secondPersonPerspective: {
-      title: 'Third-Person Perspective',
+      title: 'Second-Person Perspective',
       image: '/images/caseStudy/secondperson.png'
     }
   }
