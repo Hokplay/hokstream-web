@@ -3,22 +3,22 @@ import type { IntroductionPageTranslation } from '@/ui/introduction/translation/
 export const zhTwTranslation: IntroductionPageTranslation = {
   bannerSection: {
     image: '/images/introduction/Introduction_Hero_Placeholder_Video.png',
-    title: 'WHAT ARE WE?'
+    title: '我們是誰？'
   },
   coreValueSection: {
-    title: 'Core Value',
+    title: '核心理念',
     items: [
       {
         image: '/images/introduction/輕鬆使用_低學習門欄.png',
-        title: 'Easy to Use, Low Learning Curve'
+        title: '輕鬆使用，低學習門欄'
       },
       {
         image: '/images/introduction/賦能社群成員製作能力.png',
-        title: 'Empower Community Members in Content Creation'
+        title: '賦能社群成員製作能力'
       },
       {
         image: '/images/introduction/製作數量大_製作品質高_低成本.png',
-        title: 'High Production Volume + High Quality + Low Cost'
+        title: '製作數量大 + 製作品質高 + 低成本'
       }
     ]
   },
