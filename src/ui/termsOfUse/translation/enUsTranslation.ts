@@ -1,4 +1,4 @@
-export const enUsTermsOfUse = {
+export const enUsTranslation = {
   lastUpdated: 'Last Updated: March 20, 2025',
   pageTitle: 'Terms of Use',
   description:

@@ -1,4 +1,4 @@
-export const enUsPrivacyPolicy = {
+export const enUsTranslation = {
   lastUpdated: 'Last Updated: March 20, 2025',
   pageTitle: 'Privacy Policy',
   description:

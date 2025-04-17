@@ -1,7 +1,7 @@
-import { enUsPrivacyPolicy } from './enUsPrivacyPolicy.ts';
-import { zhTwPrivacyPolicy } from './zhTwPrivacyPolicy.ts';
+import { enUsTranslation } from './enUsTranslation.ts';
+import { zhTwTranslation } from './zhTwTranslation.ts';
 
 export const translations = {
-  'en-US': enUsPrivacyPolicy,
-  'zh-TW': zhTwPrivacyPolicy
+  'en-US': enUsTranslation,
+  'zh-TW': zhTwTranslation
 };

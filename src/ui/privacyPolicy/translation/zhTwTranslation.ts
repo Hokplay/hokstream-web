@@ -1,4 +1,4 @@
-export const zhTwPrivacyPolicy = {
+export const zhTwTranslation = {
   lastUpdated: '更新日期：2025年3月20日',
   pageTitle: '隱私政策',
   description:
