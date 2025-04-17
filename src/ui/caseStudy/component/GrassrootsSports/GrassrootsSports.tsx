@@ -26,7 +26,7 @@ function GrassrootsSports({ data }: GrassrootsSportsProps) {
         >
           <div className="relative top-[-70px] md-top-0 p-[0_4px_4px_4px] lg-p-[0_8px_8px_8px] bg-#46D3CA rounded-12px z-2 flex-1">
             <div x-class="lg-py-15px text-center">
-              <Icon name="Camera" x-class="w-20px md-w-40px align-middle" />
+              <Icon name="Camera" x-class="w-20px lg-w-40px align-middle" />
             </div>
             <div x-class="rounded-12px overflow-hidden">
               <div x-class="aspect-160/90 bg-#ffffff">
@@ -52,7 +52,7 @@ function GrassrootsSports({ data }: GrassrootsSportsProps) {
           </div>
           <div className="relative top-[-40px] md-top-0 p-[0_4px_4px_4px] lg-p-[0_8px_8px_8px] bg-#FC2F70 rounded-12px z-2 flex-1">
             <div x-class="lg-py-15px text-center">
-              <Icon name="Camera" x-class="w-20px md-w-40px align-middle" />
+              <Icon name="Camera" x-class="w-20px lg-w-40px align-middle" />
             </div>
             <div x-class="rounded-12px overflow-hidden">
               <div x-class="aspect-160/90">
