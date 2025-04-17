@@ -1,26 +1,27 @@
 import { useRef } from 'react';
 import Segmented from '@/shared/ui/component/Segmented/Segmented.tsx';
-import { translations } from '../translations/translations.ts';
-import { useTranslation } from '@/i18n/hook/useTranslation.ts';
-import ScenarioSectionItem from '@/ui/introduction/ScenarioSectionItem/ScenarioSectionItem.tsx';
+import ScenarioItem from '@/ui/introduction/ScenarioItem/ScenarioItem.tsx';
 import Affix from '@/shared/ui/component/Affix/Affix.tsx';
+import type { ScenarioSection } from '@/ui/introduction/translation/IntroductionPageTranslation.ts';
 
 import './ScenariosSection.scss';
 
-function ScenariosSection() {
-  const { locale } = useTranslation();
-  const content = translations[locale];
+interface ScenarioSectionProps {
+  data: ScenarioSection;
+}
+
+function ScenariosSection({ data }: ScenarioSectionProps) {
   const sectionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
-  const options = content.scenarioSections.map(section => ({
+  const options = data.map(section => ({
     label: section.title,
     value: section.id
   }));
 
-  function onChange(value: string) {
-    const section = sectionRefs.current[value];
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+  function onChange(target: string) {
+    const targetSection = sectionRefs.current[target];
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
@@ -29,7 +30,7 @@ function ScenariosSection() {
       <Affix offsetTop={80}>
         <div x-class="py-3px bg-$Accent">
           <Segmented
-            x-class="segmented max-w-1200px mx-auto font-bold"
+            x-class="segmented max-w-1280px mx-auto font-bold"
             options={options}
             block
             shape="round"
@@ -37,11 +38,11 @@ function ScenariosSection() {
           />
         </div>
       </Affix>
-      <div x-class="px-16px xl-px-0 max-w-1200px mx-auto">
-        {content.scenarioSections.map(section => (
-          <ScenarioSectionItem
+      <div x-class="px-16px xl-px-0 max-w-1280px mx-auto">
+        {data.map(section => (
+          <ScenarioItem
             key={section.id}
-            section={section}
+            data={section}
             sectionRef={el => (sectionRefs.current[section.id] = el)}
           />
         ))}

@@ -1,8 +1,28 @@
-import type { ScenarioSections } from '@/ui/introduction/translations/Scenarios.ts';
+import type { IntroductionPageTranslation } from '@/ui/introduction/translation/IntroductionPageTranslation.ts';
 
-// TODO: 整合其他 section
-export const zhTwTranslation: ScenarioSections = {
-  scenarioSections: [
+export const zhTwTranslation: IntroductionPageTranslation = {
+  bannerSection: {
+    image: '/images/introduction/Introduction_Hero_Placeholder_Video.png',
+    title: '我們是誰？'
+  },
+  coreValueSection: {
+    title: '核心理念',
+    items: [
+      {
+        image: '/images/introduction/輕鬆使用_低學習門欄.png',
+        title: '輕鬆使用，低學習門欄'
+      },
+      {
+        image: '/images/introduction/賦能社群成員製作能力.png',
+        title: '賦能社群成員製作能力'
+      },
+      {
+        image: '/images/introduction/製作數量大_製作品質高_低成本.png',
+        title: '製作數量大 + 製作品質高 + 低成本'
+      }
+    ]
+  },
+  scenarioSection: [
     {
       id: 'game-company',
       title: '遊戲方',
