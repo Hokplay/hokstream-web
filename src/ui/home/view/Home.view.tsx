@@ -11,7 +11,7 @@ function HomeView() {
 
   return (
     <>
-      <div className="px-20px xl-px-0 max-w-1200px mx-auto">
+      <div className="px-20px xl-px-0 max-w-1280px mx-auto">
         <Banner data={bannerSection} />
         <HowItWorks data={howSportsmeshWorksSection} />
       </div>

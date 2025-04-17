@@ -8,7 +8,7 @@ interface AboutUsProps {
 
 function AboutUs({ data }: AboutUsProps) {
   return (
-    <section className="hero-section max-w-1200px mx-auto" id="about">
+    <section className="hero-section max-w-1280px mx-auto" id="about">
       <div className="hero-content">
         <div className="hero-text">
           <h1>{data.title}</h1>
