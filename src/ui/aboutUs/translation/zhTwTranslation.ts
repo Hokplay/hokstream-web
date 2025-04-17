@@ -12,7 +12,7 @@ export const zhTwTranslation: AboutUsPageTranslation = {
   teamMemberSection: {
     members: [
       {
-        image: '/images/aboutUs/Kevin_Pai_Placeholder.png',
+        image: '/images/aboutUs/Kevin_Pai_Placeholder.webp',
         name: 'KEVIN PAI',
         bio: [
           '在遊戲產業 13 年工作經驗，於眾多遊戲公司任職。曾任線上遊戲「英雄聯盟」台港澳與東南亞區負責人，後續再於各大知名遊戲公司如 Garena、SEA Group、Supercell、Riot Games、Tencent、Funplus、TESL 擔任總經理、執行長等職位。',

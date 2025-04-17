@@ -48,27 +48,27 @@ export const zhTwTranslation: FeaturesPageTranslation = {
     title: '核心功能',
     multiLocationSection: {
       title: '多地遠端互動製播模組',
-      image: '/images/features/broadcasting_interface.png',
+      image: '/images/features/broadcasting_interface.webp',
       items: [
         {
-          image: '/images/features/start_animate.png',
+          image: '/images/features/start_animate.webp',
           title: '線上字卡/開頭動畫',
           description:
             '製作者可即時進行字卡修改，透過賽事設計者統一設計，確保完美符合轉需求'
         },
         {
-          image: '/images/features/low_latency.png',
+          image: '/images/features/low_latency.webp',
           title: '異地低延遲多訊源互動',
           description: '所有訊號延遲都低於 0.5 秒內，支援最多 18 路訊號，60FPS'
         },
         {
-          image: '/images/features/flow.png',
+          image: '/images/features/flow.webp',
           title: '賽事流程控管',
           description:
             '主辦單位/賽事設計者使用預先設定好的轉播流程&場景，控管所有操作單位行為，最大程度降低人為失誤的可能性'
         },
         {
-          image: '/images/features/signals.png',
+          image: '/images/features/signals.webp',
           title: '來自各地的訊號源',
           description:
             '可收取來自電腦桌面、手機、攝影機等不同訊源，訊源位置來自各個地方。使用者僅需掃描QRCode或是使用瀏覽器打開連結即可提供訊源'
@@ -79,13 +79,13 @@ export const zhTwTranslation: FeaturesPageTranslation = {
       title: '運動行爲偵測與記錄',
       items: [
         {
-          image: '/images/features/v_understands.png',
+          image: '/images/features/v_understands.webp',
           title: '影片理解',
           description:
             '透過模型理解影片內容，進而能應用到各種商務情境並轉化成功能'
         },
         {
-          image: '/images/features/video-processing-app.jpg',
+          image: '/images/features/video-processing-app.webp',
           title: '內容解析',
           description:
             'AI 能夠讀取遊戲畫面中的資訊，例如血量、副本、怪物狀態、傷害數值等等'
@@ -96,25 +96,25 @@ export const zhTwTranslation: FeaturesPageTranslation = {
       articles: [
         {
           title: '多地遠程製作',
-          image: '/images/features/Multi-Location-Remote-Production.png',
+          image: '/images/features/Multi-Location-Remote-Production.webp',
           description:
             '支援 8~16 路來自多地不同訊源,包含遊戲畫面、視訊鏡頭、手機前後鏡頭、攝影機...等。並透過獨特低延遲傳輸技術，獲得各地訊源進行製作。製作者亦可透過遠端操作方式進行即時轉播。'
         },
         {
           title: '無學習門檻',
-          image: '/images/features/working.png',
+          image: '/images/features/working.webp',
           description:
             '所以參賽者不用安裝 OBS、VMIX 等軟體，不用學會如何傳輸訊號，僅需要使用瀏覽器打開連結即可參與'
         },
         {
           title: '不限遊戲屬性',
-          image: '/images/features/category_less.png',
+          image: '/images/features/category_less.webp',
           description:
             '電競類型游戲，可以製作更多不同類型内容，非電競類型游戲，不需要開發 OB 功能，也可以直接製作成有趣的線上轉播行銷内容'
         },
         {
           title: '去中心化設計',
-          image: '/images/features/Decentralized-Design.png',
+          image: '/images/features/Decentralized-Design.webp',
           description:
             '每個場域都是轉播製作中心，每個社群都可以自產遊戲 擴散內容。去中心化的設計讓所有跨地影像訊源延遲時間從 3~10 秒降低至 1 秒以内'
         }

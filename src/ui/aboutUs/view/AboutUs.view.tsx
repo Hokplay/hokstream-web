@@ -5,8 +5,6 @@ import Banner from '@/ui/aboutUs/component/Banner/Banner.tsx';
 import AboutUs from '@/ui/aboutUs/component/AboutUs/AboutUs.tsx';
 import { translations } from '@/ui/aboutUs/translation/translations.ts';
 
-import './AboutUs.scss';
-
 function AboutUsView() {
   const { locale } = useTranslation();
   const content = translations[locale];

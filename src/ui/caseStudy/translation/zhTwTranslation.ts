@@ -88,23 +88,23 @@ export const zhTwTranslation: CaseStudyTranslation = {
     partners: [
       {
         name: '健行科大',
-        logo: '/images/caseStudy/Schools_Logo/健行科大.png'
+        logo: '/images/caseStudy/Schools_Logo/健行科大.webp'
       },
       {
         name: '樹德科大',
-        logo: '/images/caseStudy/Schools_Logo/樹德科大.png'
+        logo: '/images/caseStudy/Schools_Logo/樹德科大.webp'
       },
       {
         name: '永平工商',
-        logo: '/images/caseStudy/Schools_Logo/永平工商.png'
+        logo: '/images/caseStudy/Schools_Logo/永平工商.webp'
       },
       {
         name: '萬能科大',
-        logo: '/images/caseStudy/Schools_Logo/萬能科大.png'
+        logo: '/images/caseStudy/Schools_Logo/萬能科大.webp'
       },
       {
         name: '黎明科大',
-        logo: '/images/caseStudy/Schools_Logo/黎明科大.png'
+        logo: '/images/caseStudy/Schools_Logo/黎明科大.webp'
       }
     ]
   },
@@ -113,11 +113,11 @@ export const zhTwTranslation: CaseStudyTranslation = {
     subtitles: ['任何賽事都能做到不同角度的直播'],
     thirdPersonPerspective: {
       title: '第三人稱視角',
-      image: '/images/caseStudy/thirdperson.png'
+      image: '/images/caseStudy/thirdperson.webp'
     },
     secondPersonPerspective: {
       title: '第二人稱視角',
-      image: '/images/caseStudy/secondperson.png'
+      image: '/images/caseStudy/secondperson.webp'
     }
   }
 };
