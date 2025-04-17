@@ -4,8 +4,6 @@ import ScenariosSection from '@/ui/introduction/ScenariosSection/ScenariosSectio
 import { translations } from '@/ui/introduction/translation/translations.ts';
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
 
-import './Introduction.scss';
-
 function IntroductionView() {
   const { locale } = useTranslation();
   const content = translations[locale];
