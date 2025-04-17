@@ -12,7 +12,7 @@ export const enUsTranslation: AboutUsPageTranslation = {
   teamMemberSection: {
     members: [
       {
-        image: '/images/aboutUs/Kevin_Pai_Placeholder.png',
+        image: '/images/aboutUs/Kevin_Pai_Placeholder.webp',
         name: 'KEVIN PAI',
         bio: [
           'With 13 years of experience in the gaming industry, I have held positions at multiple gaming companies. I previously served as the person in charge of the online game League of Legends in the Taiwan, Hong Kong, Macau, and Southeast Asia regions. Later, I held senior management positions such as General Manager and Executive Director at renowned gaming companies, including Garena, SEA Group, Supercell, Riot Games, Tencent, FunPlus, and TESL.',

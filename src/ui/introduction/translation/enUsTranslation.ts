@@ -2,22 +2,22 @@ import type { IntroductionPageTranslation } from '@/ui/introduction/translation/
 
 export const enUsTranslation: IntroductionPageTranslation = {
   bannerSection: {
-    image: '/images/introduction/Introduction_Hero_Placeholder_Video.png',
+    image: '/images/introduction/Introduction_Hero_Placeholder_Video.webp',
     title: 'WHAT ARE WE?'
   },
   coreValueSection: {
     title: 'Core Value',
     items: [
       {
-        image: '/images/introduction/輕鬆使用_低學習門欄.png',
+        image: '/images/introduction/輕鬆使用_低學習門欄.webp',
         title: 'Easy to Use, Low Learning Curve'
       },
       {
-        image: '/images/introduction/賦能社群成員製作能力.png',
+        image: '/images/introduction/賦能社群成員製作能力.webp',
         title: 'Empower Community Members in Content Creation'
       },
       {
-        image: '/images/introduction/製作數量大_製作品質高_低成本.png',
+        image: '/images/introduction/製作數量大_製作品質高_低成本.webp',
         title: 'High Production Volume + High Quality + Low Cost'
       }
     ]

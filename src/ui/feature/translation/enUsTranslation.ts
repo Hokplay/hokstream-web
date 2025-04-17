@@ -50,28 +50,28 @@ export const enUsTranslation: FeaturesPageTranslation = {
     title: 'Core Features',
     multiLocationSection: {
       title: 'Multi-Location Interactive Broadcasting Module',
-      image: '/images/features/broadcasting_interface.png',
+      image: '/images/features/broadcasting_interface.webp',
       items: [
         {
-          image: '/images/features/start_animate.png',
+          image: '/images/features/start_animate.webp',
           title: 'Online Title Cards / Intro Animations',
           description:
             'Creators can edit title cards in real time, with unified designs set by event designers to perfectly match broadcast requirements'
         },
         {
-          image: '/images/features/low_latency.png',
+          image: '/images/features/low_latency.webp',
           title: 'Low-Latency Multi-Source Interaction Across Locations',
           description:
             'All signals have a latency of less than 0.5 seconds, supporting up to 18 sources at 60 FPS'
         },
         {
-          image: '/images/features/flow.png',
+          image: '/images/features/flow.webp',
           title: 'Event Workflow Management',
           description:
             'Organizers and event designers use pre-set broadcast workflows and scenes to manage all operational actions, minimizing human errors'
         },
         {
-          image: '/images/features/signals.png',
+          image: '/images/features/signals.webp',
           title: 'Signal Sources from Various Locations',
           description:
             'Supports signal input from desktops, mobile devices, cameras, and more, from various locations. Users can simply scan a QR code or open a link in their browser to provide a signal source'
@@ -82,13 +82,13 @@ export const enUsTranslation: FeaturesPageTranslation = {
       title: 'Sports Behavior Detection & Recording',
       items: [
         {
-          image: '/images/features/v_understands.png',
+          image: '/images/features/v_understands.webp',
           title: 'Video Understanding',
           description:
             'Understanding video content through models, enabling application in various business scenarios and transforming it into functionalities'
         },
         {
-          image: '/images/features/video-processing-app.jpg',
+          image: '/images/features/video-processing-app.webp',
           title: 'Content Analysis',
           description:
             'AI can read information from the game screen, such as health points, dungeons, monster status, damage values, and more'
@@ -99,25 +99,25 @@ export const enUsTranslation: FeaturesPageTranslation = {
       articles: [
         {
           title: 'Multi-Location Remote Production',
-          image: '/images/features/Multi-Location-Remote-Production.png',
+          image: '/images/features/Multi-Location-Remote-Production.webp',
           description:
             'Supports 8–16 different signal sources from various locations, including game screens, webcams, smartphone front/rear cameras, and professional cameras. Utilizing unique low-latency transmission technology, it enables seamless remote production and real-time broadcasting'
         },
         {
           title: 'No Learning Curve',
-          image: '/images/features/working.png',
+          image: '/images/features/working.webp',
           description:
             'Participants don’t need to install OBS, vMix, or learn signal transmission—just open a link in a browser to join'
         },
         {
           title: 'No Game Type Restrictions',
-          image: '/images/features/category_less.png',
+          image: '/images/features/category_less.webp',
           description:
             'Esports games can support various types of content, while non-esports games don’t need custom OB development and can still be turned into engaging live-streamed marketing content'
         },
         {
           title: 'Decentralized Design',
-          image: '/images/features/Decentralized-Design.png',
+          image: '/images/features/Decentralized-Design.webp',
           description:
             'Every venue becomes a broadcasting production center, and every community can generate and distribute game content. The decentralized design reduces cross-region video signal latency from 3–10 seconds to under 1 second'
         }

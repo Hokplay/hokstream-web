@@ -7,7 +7,7 @@ interface BannerProps {
 function Banner({ title }: BannerProps) {
   return (
     <div
-      x-class="h-90vh bg-[position:15%_50%] bg-[url('/images/aboutUs/hokstream-logo.png')]"
+      x-class="h-90vh bg-[position:15%_50%] bg-[url('/images/aboutUs/hokstream-logo.webp')]"
       uno-flex="~ justify-center items-center"
       uno-bg="no-repeat"
     >
