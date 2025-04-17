@@ -36,7 +36,7 @@ export const zhTwTranslation: CaseStudyTranslation = {
     },
     carouselItems: [
       {
-        title: 'Deployment costs',
+        title: '動員成本',
         image: '/images/caseStudy/cost.webp',
         list: ['40 組螢幕', '20 位人員', '10 台電腦', '5 組控台', '4 套軟體']
       },
@@ -46,7 +46,7 @@ export const zhTwTranslation: CaseStudyTranslation = {
         list: ['導播', '音控', '字卡', 'OB 觀察者', '鋼管', '攝影師', '製作人']
       },
       {
-        title: 'Only requires',
+        title: '僅使用',
         image: '/images/caseStudy/usage.webp',
         list: [
           '2 組螢幕',
