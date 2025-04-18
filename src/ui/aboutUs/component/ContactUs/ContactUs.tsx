@@ -13,9 +13,9 @@ function ContactUs({ data }: ContactUsProps) {
       <div className="section-container">
         <h2>{title}</h2>
         <form className="contact-form" method="POST" name="contactForm">
-          <div className="form-group">
-            <input type="hidden" name="form-name" value="contactForm" />
+          <input type="hidden" name="form-name" value="contactForm" />
 
+          <div className="form-group">
             <label htmlFor="name">
               {form.name} <span className="required">*</span>
             </label>
