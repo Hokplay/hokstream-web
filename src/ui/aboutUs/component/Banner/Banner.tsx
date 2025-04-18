@@ -11,9 +11,7 @@ function Banner({ title }: BannerProps) {
       uno-flex="~ justify-center items-center"
       uno-bg="no-repeat"
     >
-      <h2 x-class="xl-pl-400px whitespace-pre-line text-40px sm-text-70px md-text-86px">
-        {title}
-      </h2>
+      <h2 x-class="xl-pl-400px text-40px sm-text-70px md-text-86px">{title}</h2>
     </div>
   );
 }
