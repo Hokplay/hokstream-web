@@ -19,7 +19,7 @@ function Banner({ data }: BannerProps) {
       />
       <div x-class="absolute min-w-460px w-125% left-[-42%] aspect-1/1 top-1/2 translate-y--1/2 bg-$Base opacity-90 rounded-full lg-hidden" />
       <h1
-        className="my-0 xl-text-96px z-2 pl-10px max-w-60% lg-max-w-full lg-mb-20px"
+        className="my-0 z-2 pl-10px max-w-60% lg-max-w-full lg-mb-20px"
         uno-text="50px $Secondary"
       >
         {title}

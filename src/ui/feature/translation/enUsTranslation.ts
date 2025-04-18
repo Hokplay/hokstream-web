@@ -2,7 +2,7 @@ import type { FeaturesPageTranslation } from '@/ui/feature/translation/FeaturesP
 
 export const enUsTranslation: FeaturesPageTranslation = {
   bannerSection: {
-    title: 'WHAT’S OUR STRENGTH?',
+    title: 'Multiple signal feeds, deployed quickly and easily',
     image: '/images/features/faces-collage.jpg'
   },
   productHighlightsSection: {

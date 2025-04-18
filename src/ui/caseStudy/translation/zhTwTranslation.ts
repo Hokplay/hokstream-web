@@ -2,7 +2,7 @@ import type { CaseStudyTranslation } from '@/ui/caseStudy/translation/CaseStudyT
 
 export const zhTwTranslation: CaseStudyTranslation = {
   bannerSection: {
-    title: '我們做了什麼？',
+    title: '產業成功案例',
     image: '/images/caseStudy/CaseStudy_Hero_Image.webp'
   },
   productionStatsSection: {
