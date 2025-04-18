@@ -21,7 +21,7 @@ function ContactUs({ data }: ContactUsProps) {
         >
           <div className="form-group">
             <input type="hidden" name="form-name" value="contact-form" />
-            <input type="text" name="bot-field" hidden />
+            <input name="bot-field" hidden />
 
             <label htmlFor="name">
               {form.name} <span className="required">*</span>
