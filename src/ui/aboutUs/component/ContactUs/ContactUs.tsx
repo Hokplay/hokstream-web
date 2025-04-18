@@ -17,11 +17,9 @@ function ContactUs({ data }: ContactUsProps) {
           method="POST"
           name="contact-form"
           data-netlify="true"
-          netlify-honeypot="bot-field"
         >
           <div className="form-group">
             <input type="hidden" name="form-name" value="contact-form" />
-            <input type="text" name="bot-field" hidden />
 
             <label htmlFor="name">
               {form.name} <span className="required">*</span>
