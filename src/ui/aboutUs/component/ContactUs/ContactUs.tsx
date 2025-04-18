@@ -1,4 +1,3 @@
-import { contactConfig } from '@/config/contactConfig.ts';
 import type { ContactUsSection } from '@/ui/aboutUs/translation/AboutUsPageTranslation.ts';
 
 import './ContactUs.scss';
@@ -13,8 +12,17 @@ function ContactUs({ data }: ContactUsProps) {
     <section className="contact-section" id="contact">
       <div className="section-container">
         <h2>{title}</h2>
-        <form className="contact-form">
+        <form
+          className="contact-form"
+          method="POST"
+          name="contact-form"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
           <div className="form-group">
+            <input type="hidden" name="form-name" value="contact-form" />
+            <input name="bot-field" hidden />
+
             <label htmlFor="name">
               {form.name} <span className="required">*</span>
             </label>
@@ -61,20 +69,9 @@ function ContactUs({ data }: ContactUsProps) {
           </div>
 
           <div className="form-action">
-            {/*<button type="submit" className="submit-btn">*/}
-            {/*  {t.send} ➤*/}
-            {/*</button>*/}
-            <a
-              href={`mailto:${contactConfig.email}`}
-              target="_blank"
-              x-class="block ml-auto max-w-max bg-$Primary cursor-pointer no-underline leading-28px"
-              uno-text="#ffffff"
-              uno-border="rounded-20px"
-              uno-p="x-20px y-4px"
-              rel="noreferrer"
-            >
-              {form.send}
-            </a>
+            <button type="submit" className="submit-btn">
+              {form.send} ➤
+            </button>
           </div>
         </form>
       </div>
