@@ -8,12 +8,12 @@ interface BannerProps {
 function Banner({ data }: BannerProps) {
   return (
     <Row x-class="py-30px" align="middle">
-      <Col xs={24} md={10}>
-        <h2 x-class="my-0 mb-10px text-50px md-text-60px lg-text-96px">
+      <Col xs={24} xl={10}>
+        <h2 x-class="my-0 mb-10px text-40px md-text-60px lg-text-66px">
           {data.title}
         </h2>
       </Col>
-      <Col xs={24} md={14}>
+      <Col xs={24} xl={14}>
         <div x-class="aspect-16/9 rounded-20px overflow-hidden">
           <iframe
             uno-border="none"
