@@ -3,7 +3,7 @@ import type { FeaturesPageTranslation } from '@/ui/feature/translation/FeaturesP
 export const zhTwTranslation: FeaturesPageTranslation = {
   bannerSection: {
     title: '多地訊號源、簡單並快速的部署',
-    image: '/images/features/faces-collage.jpg'
+    image: '/images/features/faces-collage.webp'
   },
   productHighlightsSection: {
     title: '產品亮點',

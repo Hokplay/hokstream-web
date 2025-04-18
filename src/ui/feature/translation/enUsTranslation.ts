@@ -3,7 +3,7 @@ import type { FeaturesPageTranslation } from '@/ui/feature/translation/FeaturesP
 export const enUsTranslation: FeaturesPageTranslation = {
   bannerSection: {
     title: 'Multiple signal feeds, deployed quickly and easily',
-    image: '/images/features/faces-collage.jpg'
+    image: '/images/features/faces-collage.webp'
   },
   productHighlightsSection: {
     title: 'Product Highlights',
