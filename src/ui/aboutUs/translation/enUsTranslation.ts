@@ -2,7 +2,7 @@ import type { AboutUsPageTranslation } from './AboutUsPageTranslation.ts';
 
 export const enUsTranslation: AboutUsPageTranslation = {
   bannerSection: {
-    title: 'ABOUT\nUS'
+    title: 'SPORTSMESH'
   },
   aboutUsSection: {
     title: 'ABOUT US',

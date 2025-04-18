@@ -2,7 +2,7 @@ import type { AboutUsPageTranslation } from './AboutUsPageTranslation.ts';
 
 export const zhTwTranslation: AboutUsPageTranslation = {
   bannerSection: {
-    title: '關於我們'
+    title: 'SPORTSMESH'
   },
   aboutUsSection: {
     title: '關於我們',
