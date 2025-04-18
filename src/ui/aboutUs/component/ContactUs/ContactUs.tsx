@@ -1,4 +1,3 @@
-import { contactConfig } from '@/config/contactConfig.ts';
 import type { ContactUsSection } from '@/ui/aboutUs/translation/AboutUsPageTranslation.ts';
 
 import './ContactUs.scss';
@@ -9,73 +8,20 @@ interface ContactUsProps {
 
 function ContactUs({ data }: ContactUsProps) {
   const { title, form } = data;
+  console.log(title, form);
   return (
-    <section className="contact-section" id="contact">
+    <section className="contact-section">
       <div className="section-container">
-        <h2>{title}</h2>
-        <form className="contact-form">
-          <div className="form-group">
-            <label htmlFor="name">
-              {form.name} <span className="required">*</span>
-            </label>
-            <input type="text" id="name" name="name" required placeholder="-" />
-          </div>
+        <form method="POST" name="contactform" className="contactForm">
+          <input type="hidden" name="form-name" value="contactForm" />
 
-          <div className="form-group">
-            <label htmlFor="email">
-              {form.email} <span className="required">*</span>
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="-"
-            />
-          </div>
+          <input type="text" name="name" placeholder="Enter your name" />
 
-          <div className="form-group">
-            <label htmlFor="phone">
-              {form.phone} <span className="required">*</span>
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              required
-              placeholder="-"
-            />
-          </div>
+          <input type="email" name="email" placeholder="Enter your email" />
 
-          <div className="form-group">
-            <label htmlFor="description">
-              {form.description} <span className="required">*</span>
-            </label>
-            <textarea
-              id="description"
-              name="description"
-              required
-              rows={5}
-              placeholder="-"
-            ></textarea>
-          </div>
+          <textarea name="message" placeholder="Messaage"></textarea>
 
-          <div className="form-action">
-            {/*<button type="submit" className="submit-btn">*/}
-            {/*  {t.send} ➤*/}
-            {/*</button>*/}
-            <a
-              href={`mailto:${contactConfig.email}`}
-              target="_blank"
-              x-class="block ml-auto max-w-max bg-$Primary cursor-pointer no-underline leading-28px"
-              uno-text="#ffffff"
-              uno-border="rounded-20px"
-              uno-p="x-20px y-4px"
-              rel="noreferrer"
-            >
-              {form.send}
-            </a>
-          </div>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </section>

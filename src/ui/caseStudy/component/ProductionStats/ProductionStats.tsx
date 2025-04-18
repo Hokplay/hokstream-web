@@ -22,7 +22,7 @@ function StatsSection({ data }: ProductionStatsProps) {
           <Col key={index} xs={8} x-class="relative">
             <div x-class="h-full text-center" uno-flex="~ col justify-between">
               <div
-                x-class="mb-10px md-text-16px max-w-90%"
+                x-class="mb-10px md-text-16px"
                 uno-text="14px $Accent"
                 uno-font="semibold"
               >
