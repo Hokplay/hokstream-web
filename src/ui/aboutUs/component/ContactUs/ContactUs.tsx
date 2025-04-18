@@ -8,57 +8,20 @@ interface ContactUsProps {
 
 function ContactUs({ data }: ContactUsProps) {
   const { title, form } = data;
+  console.log(title, form);
   return (
     <section className="contact-section">
       <div className="section-container">
-        <h2>{title}</h2>
-        <form
-          className="contact-form"
-          method="POST"
-          name="contactForm"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-        >
+        <form method="POST" name="contactform" className="contactForm">
           <input type="hidden" name="form-name" value="contactForm" />
-          <input type="hidden" name="bot-field" />
-          <div className="form-group">
-            <label htmlFor="name">
-              {form.name} <span className="required">*</span>
-            </label>
-            <input type="text" name="name" required placeholder="-" />
-          </div>
 
-          <div className="form-group">
-            <label htmlFor="email">
-              {form.email} <span className="required">*</span>
-            </label>
-            <input type="email" name="email" required placeholder="-" />
-          </div>
+          <input type="text" name="name" placeholder="Enter your name" />
 
-          <div className="form-group">
-            <label htmlFor="phone">
-              {form.phone} <span className="required">*</span>
-            </label>
-            <input type="tel" name="phone" required placeholder="-" />
-          </div>
+          <input type="email" name="email" placeholder="Enter your email" />
 
-          <div className="form-group">
-            <label htmlFor="description">
-              {form.description} <span className="required">*</span>
-            </label>
-            <textarea
-              name="description"
-              required
-              rows={5}
-              placeholder="-"
-            ></textarea>
-          </div>
+          <textarea name="message" placeholder="Messaage"></textarea>
 
-          <div className="form-action">
-            <button type="submit" className="submit-btn">
-              {form.send} ➤
-            </button>
-          </div>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </section>
