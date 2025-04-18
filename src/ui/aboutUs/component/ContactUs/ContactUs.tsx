@@ -12,16 +12,9 @@ function ContactUs({ data }: ContactUsProps) {
     <section className="contact-section" id="contact">
       <div className="section-container">
         <h2>{title}</h2>
-        <form
-          className="contact-form"
-          method="POST"
-          name="contact-form"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-        >
+        <form className="contact-form" method="POST" name="contact-form">
           <div className="form-group">
             <input type="hidden" name="form-name" value="contact-form" />
-            <input name="bot-field" hidden />
 
             <label htmlFor="name">
               {form.name} <span className="required">*</span>
