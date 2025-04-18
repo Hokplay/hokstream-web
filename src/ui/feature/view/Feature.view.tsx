@@ -19,7 +19,10 @@ function FeatureView() {
         <Banner data={content.bannerSection} />
         <ProductHighlights data={content.productHighlightsSection} />
       </section>
-      <CoreFeatures data={content.coreFeatureSection.multiLocationSection} />
+      <CoreFeatures
+        title={content.coreFeatureSection.title}
+        data={content.coreFeatureSection.multiLocationSection}
+      />
       <VideoProcessing
         data={content.coreFeatureSection.sportsBehaviorSection}
       />

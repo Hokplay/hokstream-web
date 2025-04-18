@@ -3,14 +3,15 @@ import type { MultiLocationSection } from '@/ui/feature/translation/FeaturesPage
 import './CoreFeatures.scss';
 
 interface CoreFeaturesProps {
+  title: string; // TODO: 暫時，應拆出去
   data: MultiLocationSection;
 }
 
-const CoreFeatures = ({ data }: CoreFeaturesProps) => {
+const CoreFeatures = ({ title, data }: CoreFeaturesProps) => {
   return (
     <section className="core-features-section">
       <div className="container">
-        <h2 className="section-title">{data.title}</h2>
+        <h2 className="section-title">{title}</h2>
 
         <div className="module-badge">
           <span>{data.title}</span>
