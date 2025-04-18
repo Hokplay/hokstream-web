@@ -9,43 +9,31 @@ interface ContactUsProps {
 function ContactUs({ data }: ContactUsProps) {
   const { title, form } = data;
   return (
-    <section className="contact-section" id="contact">
+    <section className="contact-section">
       <div className="section-container">
         <h2>{title}</h2>
-        <form className="contact-form" method="POST" name="contact-form">
+        <form className="contact-form" method="POST" name="contactForm">
           <div className="form-group">
-            <input type="hidden" name="form-name" value="contact-form" />
+            <input type="hidden" name="form-name" value="contactForm" />
 
             <label htmlFor="name">
               {form.name} <span className="required">*</span>
             </label>
-            <input type="text" id="name" name="name" required placeholder="-" />
+            <input type="text" name="name" required placeholder="-" />
           </div>
 
           <div className="form-group">
             <label htmlFor="email">
               {form.email} <span className="required">*</span>
             </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="-"
-            />
+            <input type="email" name="email" required placeholder="-" />
           </div>
 
           <div className="form-group">
             <label htmlFor="phone">
               {form.phone} <span className="required">*</span>
             </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              required
-              placeholder="-"
-            />
+            <input type="tel" name="phone" required placeholder="-" />
           </div>
 
           <div className="form-group">
@@ -53,7 +41,6 @@ function ContactUs({ data }: ContactUsProps) {
               {form.description} <span className="required">*</span>
             </label>
             <textarea
-              id="description"
               name="description"
               required
               rows={5}
