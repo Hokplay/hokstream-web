@@ -30,9 +30,9 @@ export const enUsTranslation: IntroductionPageTranslation = {
         'SPORTSMESH provides game developers with the most advanced streaming solutions, ensuring that your game content is delivered to audiences with the best quality and smoothness. Our decentralized architecture enables seamless collaboration between developers, content creators, and venue operators, creating a more interactive live streaming experience',
       tags: ['不限遊戲屬性', '強化場域能力'],
       scenario: {
-        title: 'Coming Soon (Scenario Explanation',
+        title: 'Gaming community',
         description:
-          'Coming Soon (Lorem ipsum in mattis tellus euismod leo orci odio elementum vitae sed lorem venenatis mi nunc vulputate dictum fermentum feugiat.)'
+          'Game providers create dedicated program scripts for the community, enabling them to generate a large amount of consistent, high-quality, and effective content — thereby increasing player engagement and lifetime value.'
       },
       carouselItems: [
         { image: '/images/introduction/遊戲方_假情境圖.webp' }
@@ -51,9 +51,9 @@ export const enUsTranslation: IntroductionPageTranslation = {
         "Whether you're an editor, live broadcast director, or content creator, SPORTSMESH allows you to collaborate in real-time with game developers and venue operators to produce high-quality live content. Our decentralized design means you can edit and adjust visuals instantly, without being limited by equipment or location",
       tags: ['不限遊戲屬性', '強化場域能力'],
       scenario: {
-        title: 'Coming Soon (Scenario Explanation',
+        title: 'Multi-source Remote Production',
         description:
-          'Coming Soon (Lorem ipsum in mattis tellus euismod leo orci odio elementum vitae sed lorem venenatis mi nunc vulputate dictum fermentum feugiat.)'
+          'With SPORTSMESH, only standard equipment and minimal manpower are needed to enable real-time broadcasting and production across multiple locations, enhancing competitive advantage.'
       },
       carouselItems: [
         { image: '/images/introduction/製作方_假情景圖.webp' }
@@ -72,9 +72,9 @@ export const enUsTranslation: IntroductionPageTranslation = {
         'As an event venue or tournament organizer, SPORTSMESH enables you to collaborate with game developers and content creators to ensure every detail of the live broadcast is perfectly presented. Our decentralized system allows you to participate in production in real time, providing a more flexible live streaming solution',
       tags: ['不限遊戲屬性', '強化場域能力'],
       scenario: {
-        title: 'Coming Soon (Scenario Explanation',
+        title: 'Quick setup and flexible deployment',
         description:
-          'Coming Soon (Lorem ipsum in mattis tellus euismod leo orci odio elementum vitae sed lorem venenatis mi nunc vulputate dictum fermentum feugiat.)'
+          'Ultra-low latency video with lightweight equipment and mobile devices enables fast and efficient adaptation to changing scenarios, ensuring no iconic moments or key events are missed.'
       },
       carouselItems: [
         { image: '/images/introduction/場域方_假情景圖.webp' }
