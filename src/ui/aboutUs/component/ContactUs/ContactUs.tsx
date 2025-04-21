@@ -1,4 +1,3 @@
-import { contactConfig } from '@/config/contactConfig.ts';
 import type { ContactUsSection } from '@/ui/aboutUs/translation/AboutUsPageTranslation.ts';
 
 import './ContactUs.scss';
@@ -9,11 +8,14 @@ interface ContactUsProps {
 
 function ContactUs({ data }: ContactUsProps) {
   const { title, form } = data;
+
   return (
     <section className="contact-section" id="contact">
       <div className="section-container">
         <h2>{title}</h2>
-        <form className="contact-form">
+        <form method="POST" className="contact-form">
+          <input type="hidden" name="form-name" value="contact-form" />
+          <input name="bot-field" hidden />
           <div className="form-group">
             <label htmlFor="name">
               {form.name} <span className="required">*</span>
@@ -61,20 +63,9 @@ function ContactUs({ data }: ContactUsProps) {
           </div>
 
           <div className="form-action">
-            {/*<button type="submit" className="submit-btn">*/}
-            {/*  {t.send} ➤*/}
-            {/*</button>*/}
-            <a
-              href={`mailto:${contactConfig.email}`}
-              target="_blank"
-              x-class="block ml-auto max-w-max bg-$Primary cursor-pointer no-underline leading-28px"
-              uno-text="#ffffff"
-              uno-border="rounded-20px"
-              uno-p="x-20px y-4px"
-              rel="noreferrer"
-            >
-              {form.send}
-            </a>
+            <button type="submit" className="submit-btn">
+              {form.send} ➤
+            </button>
           </div>
         </form>
       </div>
