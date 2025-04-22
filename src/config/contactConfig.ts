@@ -1,3 +1,3 @@
 export const contactConfig = {
-  email: 'contact@sportsmesh.com'
+  email: 'contact@hokstream.com'
 };
