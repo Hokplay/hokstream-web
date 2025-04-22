@@ -1,5 +1,3 @@
-import TeamMember from '@/ui/aboutUs/component/TeamMember/TeamMember.tsx';
-
 export type AboutUsPageTranslation = {
   bannerSection: BannerSection;
   aboutUsSection: AboutUsSection;
