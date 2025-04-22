@@ -88,23 +88,23 @@ export const zhTwTranslation: CaseStudyTranslation = {
     partners: [
       {
         name: '健行科大',
-        logo: '/images/caseStudy/Schools_Logo/健行科大.webp'
+        logo: '/images/caseStudy/Schools_Logo/01.webp'
       },
       {
         name: '樹德科大',
-        logo: '/images/caseStudy/Schools_Logo/樹德科大.webp'
+        logo: '/images/caseStudy/Schools_Logo/03.webp'
       },
       {
         name: '永平工商',
-        logo: '/images/caseStudy/Schools_Logo/永平工商.webp'
+        logo: '/images/caseStudy/Schools_Logo/04.webp'
       },
       {
         name: '萬能科大',
-        logo: '/images/caseStudy/Schools_Logo/萬能科大.webp'
+        logo: '/images/caseStudy/Schools_Logo/05.webp'
       },
       {
         name: '黎明科大',
-        logo: '/images/caseStudy/Schools_Logo/黎明科大.webp'
+        logo: '/images/caseStudy/Schools_Logo/02.webp'
       }
     ]
   },
