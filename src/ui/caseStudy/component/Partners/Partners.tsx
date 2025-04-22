@@ -14,11 +14,14 @@ function Partners({ data }: PartnersProps) {
         <div className="partners-logo-container">
           {data.partners.map(partner => (
             <div key={partner.name} className="partner-logo">
-              <img
-                x-class="w-144px mb-10px"
-                src={partner.logo}
-                alt={partner.name}
-              />
+              <div x-class="w-144px h-80px mb-8px">
+                <img
+                  x-class="w-full h-full object-contain mb-10px"
+                  src={partner.logo}
+                  alt={partner.name}
+                />
+              </div>
+
               <span uno-text="16px #101113">{partner.name}</span>
             </div>
           ))}
