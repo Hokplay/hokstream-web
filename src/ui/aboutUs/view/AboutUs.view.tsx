@@ -1,4 +1,3 @@
-import TeamMember from '@/ui/aboutUs/component/TeamMember/TeamMember.tsx';
 import ContactUs from '@/ui/aboutUs/component/ContactUs/ContactUs.tsx';
 import { useTranslation } from '@/i18n/hook/useTranslation.ts';
 import Banner from '@/ui/aboutUs/component/Banner/Banner.tsx';
@@ -13,7 +12,6 @@ function AboutUsView() {
     <div>
       <Banner title={content.bannerSection.title} />
       <AboutUs data={content.aboutUsSection} />
-      <TeamMember data={content.teamMemberSection} />
       <ContactUs data={content.contactUsSection} />
     </div>
   );
